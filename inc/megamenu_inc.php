@@ -17,14 +17,23 @@
                         <!-- menu links -->
                         <ul class="menu-links">
                             <?php
-                            if ($main_menu) {
-                                foreach ($main_menu );
-                            }
+                            foreach ($main_menu as $key => $value) {
+                                echo "<li> $key </li>
+                                            <ul>";
+                                if (is_array($key)) {
+                                    foreach ($key as $key_in => $value_in) {
+                                        echo "<li > $key_in </li >";
+                                    }
+
+                                }
+                                echo "</ul>";
+                            };
+
                             ?>
 
                             <!-- active class -->
                             <li class="active"><a href="javascript:void(0)"> Home <i
-                                        class="fa fa-angle-down fa-indicator"></i></a>
+                                            class="fa fa-angle-down fa-indicator"></i></a>
                                 <!-- drop down multilevel  -->
                                 <ul class="drop-down-multilevel">
                                     <li><a href="../index-1.html">home 01 </a></li>
@@ -117,7 +126,7 @@
                                     <li><a href="../blog-masonry-3-columns.html">Blog masonry 3 columns</a></li>
                                     <li><a href="../blog-masonry-4-columns.html">Blog masonry 4 columns</a></li>
                                     <li><a href="javascript:void(0)">Blog single <i
-                                                class="fa fa-angle-right fa-indicator"></i></a>
+                                                    class="fa fa-angle-right fa-indicator"></i></a>
                                         <!-- drop down second level -->
                                         <ul class="drop-down-multilevel">
                                             <li><a href="../blog-single-image-post.html">blog single image post</a>
@@ -131,7 +140,7 @@
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0)">Case Studies <i
-                                        class="fa fa-angle-down fa-indicator"></i></a>
+                                            class="fa fa-angle-down fa-indicator"></i></a>
                                 <!-- drop down multilevel  -->
                                 <ul class="drop-down-multilevel">
                                     <li><a href="../case-studies-2-columns.html">case studies 2 columns</a></li>
@@ -151,7 +160,7 @@
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0)"> Contact us <i
-                                        class="fa fa-angle-down fa-indicator"></i> </a>
+                                            class="fa fa-angle-down fa-indicator"></i> </a>
                                 <!-- drop down multilevel  -->
                                 <ul class="drop-down-multilevel">
                                     <li><a href="../contact-single-office.html">contact single office </a></li>

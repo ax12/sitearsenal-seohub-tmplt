@@ -1,14 +1,14 @@
 
 <div class="main-banner light-blue-bg">
 
-    <div class="rocket"><img class="img-fluid" src="assets/images/rocket.gif" alt=""></div>
+    <div class="rocket"><img class="img-fluid" src="../assets/images/rocket.gif" alt=""></div>
     <div class="banner-text text-white">
         <h2 class="title text-white"><?php echo $main_header_settings['slogan'];?></h2>
         <p class="text-decoration-none white"><?php echo $main_header_settings['sub_slogan'];?></p>
         <a target="_blank" class="button white purchase-btn"
            href=" <?php echo $main_header_settings[button][url]?>"><i
                 class="fa fa-cart-arrow-down" aria-hidden="true"></i> <?php echo $main_header_settings[button][name]?></a>
-        <a class="ml-3" href="https://getbootstrap.com/"><img class="img-fluid" src="assets/images/bootstrap-img.png"
+        <a class="ml-3" href="https://getbootstrap.com/"><img class="img-fluid" src="../assets/images/bootstrap-img.png"
                                                               alt=""></a>
     </div>
     <div id="rev_slider_12_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="seo-intro"
@@ -22,7 +22,7 @@
                     data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                     data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/revolution/images/bg.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                    <img src="../assets/revolution/images/bg.png" alt="" data-bgposition="center center" data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -65,7 +65,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 6;"><img src="assets/revolution/images/effect-4.png" alt="" data-ww="708px"
+                         style="z-index: 6;"><img src="../../assets/revolution/images/effect-4.png" alt="" data-ww="708px"
                                                   data-hh="432px" data-no-retina></div>
 
                     <!-- LAYER NR. 3 -->
@@ -83,7 +83,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 7;"><img src="assets/revolution/images/effect-1.png" alt="" data-ww="266px"
+                         style="z-index: 7;"><img src="../../assets/revolution/images/effect-1.png" alt="" data-ww="266px"
                                                   data-hh="189px" data-no-retina></div>
 
                     <!-- LAYER NR. 4 -->
@@ -101,7 +101,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 8;"><img src="assets/revolution/images/effect-2.png" alt="" data-ww="190px"
+                         style="z-index: 8;"><img src="../../assets/revolution/images/effect-2.png" alt="" data-ww="190px"
                                                   data-hh="200px" data-no-retina></div>
 
                     <!-- LAYER NR. 5 -->
@@ -119,7 +119,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 9;"><img src="assets/revolution/images/effect-3.png" alt="" data-ww="158px"
+                         style="z-index: 9;"><img src="../../assets/revolution/images/effect-3.png" alt="" data-ww="158px"
                                                   data-hh="158px" data-no-retina></div>
 
                     <!-- LAYER NR. 6 -->
@@ -137,7 +137,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 10;"><img src="assets/revolution/images/effect-5.png" alt="" data-ww="234px"
+                         style="z-index: 10;"><img src="../../assets/revolution/images/effect-5.png" alt="" data-ww="234px"
                                                    data-hh="234px" data-no-retina></div>
 
                     <!-- LAYER NR. 7 -->
@@ -155,7 +155,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 11;"><img src="assets/revolution/images/effect-6.png" alt="" data-ww="208px"
+                         style="z-index: 11;"><img src="../assets/revolution/images/effect-6.png" alt="" data-ww="208px"
                                                    data-hh="164px" data-no-retina></div>
 
                     <!-- LAYER NR. 8 -->
@@ -173,7 +173,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 12;"><img src="assets/revolution/images/tablet.png" alt="" data-ww="568px"
+                         style="z-index: 12;"><img src="../assets/revolution/images/tablet.png" alt="" data-ww="568px"
                                                    data-hh="703px" data-no-retina></div>
 
                     <!-- LAYER NR. 9 -->
@@ -191,7 +191,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 13;"><img src="assets/revolution/images/mobile.png" alt="" data-ww="322px"
+                         style="z-index: 13;"><img src="../assets/revolution/images/mobile.png" alt="" data-ww="322px"
                                                    data-hh="437px" data-no-retina></div>
 
                     <!-- LAYER NR. 10 -->
@@ -209,7 +209,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 14;"><img src="assets/revolution/images/effect-6.png" alt="" data-ww="147px"
+                         style="z-index: 14;"><img src="../assets/revolution/images/effect-6.png" alt="" data-ww="147px"
                                                    data-hh="116px" data-no-retina></div>
 
                     <!-- LAYER NR. 11 -->
@@ -227,7 +227,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 15;"><img src="assets/revolution/images/target-bord.png" alt="" data-ww="202px"
+                         style="z-index: 15;"><img src="../assets/revolution/images/target-bord.png" alt="" data-ww="202px"
                                                    data-hh="202px" data-no-retina></div>
 
                     <!-- LAYER NR. 12 -->
@@ -245,7 +245,7 @@
                          data-responsive_offset="on"
 
 
-                         style="z-index: 16;"><img src="assets/revolution/images/rocket.png" alt="" data-ww="112px"
+                         style="z-index: 16;"><img src="../assets/revolution/images/rocket.png" alt="" data-ww="112px"
                                                    data-hh="112px" data-no-retina></div>
                 </li>
             </ul>

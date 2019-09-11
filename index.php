@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
+    <?php require_once 'inc/get_lang_and_locations_inc.php'; //определяем язык или локацию ?>
     <?php require_once 'inc/style_scripts_header_inc.php' // connect css files?>
     <?php require_once 'inc/site_settings_array.php' // connect settings arrays?>
 </head>

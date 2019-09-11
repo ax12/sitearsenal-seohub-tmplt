@@ -1,3 +1,14 @@
 .white a{
     color: #ffffff ;
 }
+
+.mx-icons-hover {
+    font-size: 32px;
+    color: #e6e6e6;
+}
+
+.mx-icons-hover:hover {
+    font-size: 32px;
+    color: #0f34d8;
+
+}

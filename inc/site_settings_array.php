@@ -5,7 +5,7 @@ if (!defined('TOSIBOSI_LASITRASI')) {
     die();
 }
 //main settings START
-$loader = true;
+$loader = false;
 $dark_logo = '/img/dark-logo.png';
 $light_logo = '/img/light-logo.png';
 //main settings END
@@ -50,5 +50,8 @@ $main_menu = array(
 );
 //правый выезжающий сайдбар с контактной информацией
 $right_side_bar = array(
-  'dark_logo' => '/img/dark-logo.png',
+  'text_after_logo' => 'Свяжитесь с нами удобным для вас способом. Мы готовы ответить на ваши вопросы, предложить наилучший вариант для решения вашей задачи. Мы можем договриться о встрече с вами для детального обсуждения вашего проекта.',
+  'yekaterinburg' => array(
+
+  )
 );

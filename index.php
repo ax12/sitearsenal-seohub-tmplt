@@ -68,9 +68,9 @@ multi-page -->
                             <div class="item-box">
                                 <div class="item-inside">
                                     <span class="demo-img"
-                                          style="background-image: url(assets/images/demo/home-1.jpg);"></span>
-                                    <img class="lazy" src="assets/images/demo/loading.jpg"
-                                         data-original="assets/images/demo/home-1.jpg" alt="">
+                                          style="background-image: url(../assets/images/demo/home-1.jpg);"></span>
+                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
+                                         data-original="../assets/images/demo/home-1.jpg" alt="">
                                 </div>
                             </div>
                         </a>
@@ -83,9 +83,9 @@ multi-page -->
                             <div class="item-box">
                                 <div class="item-inside">
                                     <span class="demo-img"
-                                          style="background-image: url(assets/images/demo/home-2.jpg);"></span>
-                                    <img class="lazy" src="assets/images/demo/loading.jpg"
-                                         data-original="assets/images/demo/home-2.jpg" alt="">
+                                          style="background-image: url(../assets/images/demo/home-2.jpg);"></span>
+                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
+                                         data-original="../assets/images/demo/home-2.jpg" alt="">
                                 </div>
                             </div>
                         </a>
@@ -98,9 +98,9 @@ multi-page -->
                             <div class="item-box">
                                 <div class="item-inside">
                                     <span class="demo-img"
-                                          style="background-image: url(assets/images/demo/home-3.jpg);"></span>
-                                    <img class="lazy" src="assets/images/demo/loading.jpg"
-                                         data-original="assets/images/demo/home-3.jpg" alt="">
+                                          style="background-image: url(../assets/images/demo/home-3.jpg);"></span>
+                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
+                                         data-original="../assets/images/demo/home-3.jpg" alt="">
                                 </div>
                             </div>
                         </a>
@@ -115,9 +115,9 @@ multi-page -->
                             <div class="item-box">
                                 <div class="item-inside">
                                     <span class="demo-img"
-                                          style="background-image: url(assets/images/demo/home-4.jpg);"></span>
-                                    <img class="lazy" src="assets/images/demo/loading.jpg"
-                                         data-original="assets/images/demo/home-4.jpg" alt="">
+                                          style="background-image: url(../assets/images/demo/home-4.jpg);"></span>
+                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
+                                         data-original="../assets/images/demo/home-4.jpg" alt="">
                                 </div>
                             </div>
                         </a>
@@ -130,9 +130,9 @@ multi-page -->
                             <div class="item-box">
                                 <div class="item-inside">
                                     <span class="demo-img"
-                                          style="background-image: url(assets/images/demo/home-5.jpg);"></span>
-                                    <img class="lazy" src="assets/images/demo/loading.jpg"
-                                         data-original="assets/images/demo/home-5.jpg" alt="">
+                                          style="background-image: url(../assets/images/demo/home-5.jpg);"></span>
+                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
+                                         data-original="../assets/images/demo/home-5.jpg" alt="">
                                 </div>
                             </div>
                         </a>
@@ -162,7 +162,7 @@ Our FEATURES -->
         <div class="row">
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/01.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/01.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Revolution slider included</h5>
                         <p>Includes revolution slider jquery plugin worth <b>$14</b> which will make your website more
@@ -172,7 +172,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/02.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/02.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Responsive Mega Drop Down Menu</h5>
                         <p>Horizontal, vertical left, vertical right, 6 drop down animations, multilevel drop down and
@@ -182,7 +182,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/03.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/03.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Fully Responsive & retina ready</h5>
                         <p>Seohub automatically resize to fit the different screen size and make it look great on all
@@ -192,7 +192,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/04.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/04.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Support all major Browsers</h5>
                         <p>Seohub support all major browsers like Google Chrome, Mozilla Firefox, Safari, Opera,
@@ -202,7 +202,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/05.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/05.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Well organized & customized code</h5>
                         <p>We have built Seohub to be the ultimate HTML5 template with clean, clear, commented and
@@ -212,7 +212,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/06.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/06.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Home layouts options</h5>
                         <p>Seohub has more 5 stunning home page layouts options to choose from. Change as per your
@@ -222,7 +222,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 last-1 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/07.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/07.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">blog layout options</h5>
                         <p>Each story needs a beautiful design. modern and unique blog layouts including classic and
@@ -232,7 +232,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 last-2 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/08.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/08.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Detailed documentation</h5>
                         <p>Seohub Documentation has been carefully detailed and completed with super easy to understand
@@ -242,7 +242,7 @@ Our FEATURES -->
             </div>
             <div class="col-lg-4 col-md-6 feature-item">
                 <div class="feature-box-01 last-3 text-left mb-4">
-                    <div class="feature-box-img"><img src="assets/images/icon/09.png" alt=""></div>
+                    <div class="feature-box-img"><img src="../assets/images/icon/09.png" alt=""></div>
                     <div class="feature-box-info">
                         <h5 class="mb-2 mt-2">Ultimate customizability</h5>
                         <p>Choose the right color, layout, background pattern and background image with our theme
@@ -271,13 +271,13 @@ Multi-Header -->
             <div class="col-md-12">
                 <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="false" data-items="4" data-sm-items="3"
                      data-xs-items="2" data-loop="true" data-auto="true" data-space="0">
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img1.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img2.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img3.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img4.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img5.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img6.png" alt=""></div>
-                    <div class="item"><img class="img-fluid" src="assets/images/shortcode/img7.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img1.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img2.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img3.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img4.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img5.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img6.png" alt=""></div>
+                    <div class="item"><img class="img-fluid" src="../assets/images/shortcode/img7.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -301,16 +301,16 @@ Multi-Header -->
             <div class="col-md-12">
                 <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="true" data-items="4" data-md-items="3"
                      data-sm-items="2" data-xs-items="2" data-loop="true">
-                    <div class="item"><img class="img-fluid lazy" src="assets/images/header/loading.jpg"
-                                           data-original="assets/images/header/style1.jpg" alt=""></div>
-                    <div class="item"><img class="img-fluid lazy" src="assets/images/header/loading.jpg"
-                                           data-original="assets/images/header/style2.jpg" alt=""></div>
-                    <div class="item"><img class="img-fluid lazy" src="assets/images/header/loading.jpg"
-                                           data-original="assets/images/header/style3.jpg" alt=""></div>
-                    <div class="item"><img class="img-fluid lazy" src="assets/images/header/loading.jpg"
-                                           data-original="assets/images/header/style4.jpg" alt=""></div>
-                    <div class="item"><img class="img-fluid lazy" src="assets/images/header/loading.jpg"
-                                           data-original="assets/images/header/style5.jpg" alt=""></div>
+                    <div class="item"><img class="img-fluid lazy" src="../assets/images/header/loading.jpg"
+                                           data-original="../assets/images/header/style1.jpg" alt=""></div>
+                    <div class="item"><img class="img-fluid lazy" src="../assets/images/header/loading.jpg"
+                                           data-original="../assets/images/header/style2.jpg" alt=""></div>
+                    <div class="item"><img class="img-fluid lazy" src="../assets/images/header/loading.jpg"
+                                           data-original="../assets/images/header/style3.jpg" alt=""></div>
+                    <div class="item"><img class="img-fluid lazy" src="../assets/images/header/loading.jpg"
+                                           data-original="../assets/images/header/style4.jpg" alt=""></div>
+                    <div class="item"><img class="img-fluid lazy" src="../assets/images/header/loading.jpg"
+                                           data-original="../assets/images/header/style5.jpg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -339,7 +339,7 @@ HIGH QUALITY DOCUMENTATION -->
                 </div>
             </div>
             <div class="col-md-6 text-right">
-                <img class="img-fluid" style="display:inline; width:550px" src="assets/images/mockup.png" alt="">
+                <img class="img-fluid" style="display:inline; width:550px" src="../assets/images/mockup.png" alt="">
             </div>
         </div>
     </div>
@@ -400,145 +400,12 @@ Footer-->
 <!--=================================
 back to top -->
 <div class="back-to-top">
-    <span><img src="assets/images/rocket.png" data-src="assets/images/rocket.png" data-hover="assets/images/rocket.gif"
+    <span><img src="../assets/images/rocket.png" data-src="../assets/images/rocket.png" data-hover="../assets/images/rocket.gif"
                alt=""></span>
 </div>
 <!--=================================
 back to top -->
 
-<!--=================================
-jquery -->
-
-<!-- jquery  -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/popper.min.js"></script>
-
-<!-- bootstrap -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-
-<!-- mega-menu -->
-<script type="text/javascript" src="assets/js/mega-menu/mega_menu.js"></script>
-
-<!-- owl-carousel -->
-<script type="text/javascript" src="assets/js/owl-carousel/owl.carousel.min.js"></script>
-
-<!-- lazyload -->
-<script type="text/javascript" src="assets/js/jquery.lazyload.min.js"></script>
-
-<!-- Hover 3D -->
-<script type="text/javascript" src="assets/js/jquery.hover3d.min.js"></script>
-
-<!-- custom -->
-<script type="text/javascript" src="assets/js/custom.js"></script>
-<!-- REVOLUTION JS FILES -->
-<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript"
-        src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-<!-- custom -->
-<!--  <script type="text/javascript" src="assets/js/custom.js"></script> -->
-
-
-<script type="text/javascript">
-    var tpj = jQuery;
-
-    var revapi12;
-    tpj(document).ready(function () {
-        if (tpj("#rev_slider_12_1").revolution == undefined) {
-            revslider_showDoubleJqueryError("#rev_slider_12_1");
-        } else {
-            revapi12 = tpj("#rev_slider_12_1").show().revolution({
-                sliderType: "standard",
-                jsFileLocation: "assets/revolution/js",
-                sliderLayout: "fullwidth",
-                dottedOverlay: "none",
-                delay: 9000,
-                navigation: {
-                    onHoverStop: "off",
-                },
-                visibilityLevels: [1240, 1024, 778, 480],
-                gridwidth: 1600,
-                gridheight: 900,
-                lazyType: "none",
-                parallax: {
-                    type: "mouse",
-                    origo: "enterpoint",
-                    speed: 400,
-                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-                    type: "mouse",
-                },
-                shadow: 0,
-                spinner: "spinner0",
-                stopLoop: "off",
-                stopAfterLoops: -1,
-                stopAtSlide: -1,
-                shuffle: "off",
-                autoHeight: "off",
-                disableProgressBar: "on",
-                hideThumbsOnMobile: "off",
-                hideSliderAtLimit: 0,
-                hideCaptionAtLimit: 0,
-                hideAllCaptionAtLilmit: 0,
-                debugMode: false,
-                fallbacks: {
-                    simplifyAll: "off",
-                    nextSlideOnWindowFocus: "off",
-                    disableFocusListener: false,
-                }
-            });
-        }
-    });
-    /*ready*/
-</script>
-
-<script type="text/javascript">
-    $(function () {
-        $("img.lazy").lazyload({
-            event: "sporty"
-        });
-    });
-    $(window).bind("load", function () {
-        var timeout = setTimeout(function () {
-            $("img.lazy").trigger("sporty")
-        }, 100);
-    });
-</script>
-
-<script>
-    $(".feature-item").hover3d({
-        selector: ".feature-box-01 ",
-        sensitivity: 10,
-        perspective: 1000,
-        shine: true
-    });
-</script>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-49980377-11', 'auto');
-    ga('send', 'pageview');
-
-</script>
+<?php require_once 'inc/scripts_footer_inc.php' ?>
 </body>
 </html>

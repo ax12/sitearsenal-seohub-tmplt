@@ -17,7 +17,7 @@
 
 <!-- font awesome -->
 <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="../assets/css/fontavesome.5.10.all.min.css" />
+
 
 <!-- Themify icons -->
 <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css" />

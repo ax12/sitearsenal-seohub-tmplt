@@ -4,7 +4,11 @@ if (!defined('TOSIBOSI_LASITRASI')) {
     echo $antihack_msg;
     die();
 }
-$loader = false;
+//main settings START
+$loader = true;
+$dark_logo = '/img/dark-logo.png';
+$light_logo = '/img/light-logo.png';
+//main settings END
 
 $main_header_settings = array(
     'contacts' => array(
@@ -23,20 +27,28 @@ $main_header_settings = array(
         'url' => '/',
     )
 );
-
+//главное меню сайта
 $main_menu = array(
     'Главная' => array(
-        'WEB разработка' => '/',
-        'WEB Дизайн' => '/',
-        'Продвижение' => '/',
+        'О компании' => '/',
+        'Портфолио' => '/',
+        'Технологии' => '/',
     ),
     'Услуги' => array(
         'WEB разработка' => '/',
         'WEB Дизайн' => '/',
         'Продвижение' => '/',
     ),
-    'Наши преимущества' => '/',
+    'Наши преимущества' => array(
+        'Скорость' => '/',
+        'Медленность' => '/',
+        'Блаблаблашность' => '/',
+    ),
     'Портфолио' => '/',
     'Блог' => '/',
     'Контакты' => '/',
+);
+//правый выезжающий сайдбар с контактной информацией
+$right_side_bar = array(
+  'dark_logo' => '/img/dark-logo.png',
 );

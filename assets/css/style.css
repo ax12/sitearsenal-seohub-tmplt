@@ -323,7 +323,7 @@ Page section margin padding
 #header.transparent .mega-menu .menu-links > li > a { color: #ffffff; }
 #header.transparent .mega-menu.desktopTopFixed .menu-links > li > a { color: #353535; }
 #header.transparent .mega-menu .menu-links > li a:hover { color: rgba(255, 255, 255, 0.75); }
-#header.transparent .mega-menu .menu-links > li.active a { color: rgba(255, 255, 255, 0.75); }
+/*#header.transparent .mega-menu .menu-links > li.active a { color: rgba(255, 255, 255, 0.75); }*/
 #header.transparent .mega-menu.desktopTopFixed .menu-list-items { background: #2046f2; padding: 0px; border: 0px solid #e0e0e0; }
 #header.transparent .mega-menu.desktopTopFixed .menu-links > li > a { color: #ffffff; }
 #header.transparent .search-trigger::before { border-color: #ffffff; }

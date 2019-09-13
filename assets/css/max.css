@@ -10,5 +10,21 @@
 .mx-icons-hover:hover {
     font-size: 32px;
     color: #0f34d8;
-
+}
+.mx-city-header {
+  padding-left: 30px !important;
+}
+.lang-toggle {
+    padding-left: 60px;
+    font-size: 12px;
+}
+.mx-adress-topbar {
+    font-size: 10px;
+    padding-right: 30px;
+}
+.mx-lineheight-top-bar {
+    line-height: 16px;
+}
+.mx-font-marker {
+    font-size: 25px;
 }

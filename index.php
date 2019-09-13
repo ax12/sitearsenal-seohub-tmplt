@@ -3,9 +3,7 @@
 <html lang="ru">
 
 <head>
-    <?php require_once 'inc/get_lang_and_locations_inc.php'; //определяем язык или локацию ?>
-    <?php require_once 'inc/style_scripts_header_inc.php' // connect css files?>
-    <?php require_once 'inc/site_settings_array.php' // connect settings arrays?>
+
 </head>
 
 <body>
@@ -51,100 +49,7 @@ slider -->
 
 <!--=================================
 multi-page -->
-<section class="demo-sec light-blue-bg page-section-ptb plr-6 sec-relative" id="scroll-buttons">
-    <marquee class="animated-text o-hidden white">Home pages</marquee>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title text-center">
-                    <span>stunning Home Demos </span>
-                    <h2 class="mb-3">Multi- Home Layout</h2>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="item demo-1">
-                        <a target="_blank" href="index-1.html">
-                            <div class="item-box">
-                                <div class="item-inside">
-                                    <span class="demo-img"
-                                          style="background-image: url(../assets/images/demo/home-1.jpg);"></span>
-                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
-                                         data-original="../assets/images/demo/home-1.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <div class="demo-box"><a href="index-1.html">Home Layout 1</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item demo-2">
-                        <a target="_blank" href="index-2.html">
-                            <div class="item-box">
-                                <div class="item-inside">
-                                    <span class="demo-img"
-                                          style="background-image: url(../assets/images/demo/home-2.jpg);"></span>
-                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
-                                         data-original="../assets/images/demo/home-2.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <div class="demo-box"><a href="index-2.html">Home Layout 2</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item demo-3">
-                        <a target="_blank" href="index-3.html">
-                            <div class="item-box">
-                                <div class="item-inside">
-                                    <span class="demo-img"
-                                          style="background-image: url(../assets/images/demo/home-3.jpg);"></span>
-                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
-                                         data-original="../assets/images/demo/home-3.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <div class="demo-box"><a href="index-3.html">Home Layout 3</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="item demo-4 mb-0">
-                        <a target="_blank" href="index-4.html">
-                            <div class="item-box">
-                                <div class="item-inside">
-                                    <span class="demo-img"
-                                          style="background-image: url(../assets/images/demo/home-4.jpg);"></span>
-                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
-                                         data-original="../assets/images/demo/home-4.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <div class="demo-box"><a href="index-4.html">Home Layout 4</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item demo-5 mb-0">
-                        <a target="_blank" href="index-5.html">
-                            <div class="item-box">
-                                <div class="item-inside">
-                                    <span class="demo-img"
-                                          style="background-image: url(../assets/images/demo/home-5.jpg);"></span>
-                                    <img class="lazy" src="../assets/images/demo/loading.jpg"
-                                         data-original="../assets/images/demo/home-5.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <div class="demo-box"><a href="index-5.html">Home Layout 5</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php require_once 'inc/multi_portfolio_inc.php' ?>
 <!--=================================
 multi-page -->
 
@@ -384,12 +289,12 @@ Footer-->
         <div class="row">
             <div class="col-md-12">
                 <div class="footer-widget text-center">
-                    <h2 class="title text-white">Get Seohub Template Now!</h2>
-                    <p class="text-white">All live demo pages are included in the download package <br>with Seohub
-                        Documentation</p>
-                    <a target="_blank" class="button purchase-btn"
-                       href="https://themeforest.net/item/seohub-seo-marketing-social-media-multipurpose-html5-template/20234006/?ref=Potenzaglobalsolutions"><i
-                                class="fa fa-cart-arrow-down" aria-hidden="true"></i> Purchase now</a>
+<!--                    <h2 class="title text-white">Get Seohub Template Now!</h2>-->
+<!--                    <p class="text-white">All live demo pages are included in the download package <br>with Seohub-->
+<!--                        Documentation</p>-->
+<!--                    <a target="_blank" class="button purchase-btn"-->
+<!--                       href="https://themeforest.net/item/seohub-seo-marketing-social-media-multipurpose-html5-template/20234006/?ref=Potenzaglobalsolutions"><i-->
+<!--                                class="fa fa-cart-arrow-down" aria-hidden="true"></i> Purchase now</a>-->
                 </div>
             </div>
         </div>

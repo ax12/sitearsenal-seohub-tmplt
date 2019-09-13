@@ -26,7 +26,7 @@
 <link rel="stylesheet" type="text/css" href="../assets/css/owl-carousel/owl.carousel.css" />
 
 <!-- REVOLUTION STYLE SHEETS -->
-<link rel="stylesheet" type="text/css" href="../assets/revolution/css/settings.css">
+<!--<link rel="stylesheet" type="text/css" href="../assets/revolution/css/settings.css">-->
 
 <!-- main style -->
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />

@@ -227,7 +227,7 @@ Page section margin padding
 #header.default { position: absolute; width: 100%; }
 /*topbar*/
 
-.topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding: 10px 0px; }
+.topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.2);  padding: 5px 0px;  background-color: #1f41de;}
 .topbar li, .topbar li a { color: #ffffff; }
 .topbar-left li i { padding-right: 5px; }
 .topbar-right .list-inline li:last-child, .topbar-right li:last-child i { padding-right: 0px; }
@@ -506,7 +506,7 @@ section .container-fluid{padding: 0 60px;}
 	.main-banner .forcefullwidth_wrapper_tp_banner{display:none;}
 	.main-banner .rocket{left:auto; right:0;}
 	.main-banner .rocket img{width:330px;}
-	.main-banner .banner-text{position: relative; top: 0; left:0; width:60%; padding:0 30px; padding-top:140px; padding-bottom:60px;}
+	.main-banner .banner-text{position: relative; top: 0; left:0; width:60%; padding:0 30px; padding-top:200px; padding-bottom:60px;}
 }
 
 @media (max-width:1099px){
@@ -528,7 +528,7 @@ section .container-fluid{padding: 0 60px;}
 	.mega-menu .menu-mobile-collapse-trigger { top: 20px; }
 	.mega-menu { min-height: 76px; }
 	.mega-menu .menu-links > li > a { line-height: 26px; }
-	.main-banner .banner-text{width:100%;}
+	.main-banner .banner-text{width:100%;     padding-top: 200px;}
 	.search-button { padding: 10px 0 6px; }
 	.side-menu { display: none; }
 	.search { top: 158px; height: 90px; }
@@ -567,7 +567,7 @@ section .container-fluid{padding: 0 60px;}
 	h4 { font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px; }
 	
 	.mega-menu .menu-logo img{height:40px;}
-	.main-banner .banner-text{padding-top: 120px;}
+	.main-banner .banner-text{padding-top: 200px;}
 	.animated-text{font-size:100px; line-height:100px;}
 	.main-banner .rocket{bottom:-100px;}
 	.main-banner .rocket img{width:250px;}

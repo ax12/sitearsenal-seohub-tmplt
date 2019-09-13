@@ -24,7 +24,17 @@
                 } //закончили разматывать массив с проектами из файла site_settings_array.php
                 ?>
 
+
+
+
+                            <div class="col-12 d-flex justify-content-center">
+                                <a class="button border-bule text-center" href="#">смотреть еще</a>
+                            </div>
+
+
+
             </div> <!--end row-->
         </div>
+
     </div>
 </section>

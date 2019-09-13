@@ -147,7 +147,32 @@ $portfolio_arr = array( //используются в файле inc/multi_portf
     'vecherya-soloha' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
-        'img_main_scroll' => '../img/vecherya-soloha-400px.jpg',
+        'img_main_scroll' => '../img/vecherya-soloha-550px.jpg',
+    ),
+      'instrument-ekat' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/instrument-ekat-550px.jpg',
+    ),
+      'pelemeshka-ekb' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/pelemeshka-ekb-550px.jpg',
+    ),
+      '4elementstobacco' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/4elementstobacco-550px.jpg',
+    ),
+      'air-parking' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/air-parking-550px.jpg',
+    ),
+      'krasnodar.internet-doma' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/krasnodar.internet-doma-550px.jpg',
     ),
 );
 /*КОНЕЦ ****Массивы данных для русскоязычного ПОРТФОЛИО, данные подходят для Краснодара и Екатеринбурга******************КОНЕЦ*/

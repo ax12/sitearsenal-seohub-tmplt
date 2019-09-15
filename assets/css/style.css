@@ -366,7 +366,7 @@ Page section margin padding
 .demo-4 a:hover .item-box .item-inside img {margin-top: -1135px;}
 .demo-5 a:hover .item-box .item-inside img {margin-top: -1199px;}
 
-.portfolio .item .item-box .item-inside .demo-img{width: 100%; height: 100%; background-position: center top; background-repeat: no-repeat; background-size: 100% auto; position: absolute; top: 0; left: 0; z-index: 99999; -webkit-transition-duration: 6s; -moz-transition-duration: 6s;
+.portfolio .item .item-box .item-inside .demo-img{width: 100%; height: 100%; background-position: center top; background-repeat: no-repeat; background-size: 100% auto; position: absolute; top: 0; left: 0; z-index: 99998; -webkit-transition-duration: 6s; -moz-transition-duration: 6s;
     -ms-transition-duration: 5s; -o-transition-duration: 5s; transition-duration: 5s; }
 .portfolio a:hover .item-box .item-inside .demo-img{background-position: center bottom;}
 

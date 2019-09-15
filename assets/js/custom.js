@@ -58,7 +58,7 @@ var POTENZA = {};
           sibling             : true,              // hide the others showing drop downs if this option true. this option works on if the trigger option is "click". options (true) or (false)
           outside_click_close : true,  // hide the showing drop downs when user click outside the menu. this option works if the trigger option is "click". options (true) or (false)
           top_fixed           : false,           // fixed the menu top of the screen. options (true) or (false)
-          sticky_header       : false,       // menu fixed on top when scroll down down. options (true) or (false)
+          sticky_header       : true,       // menu fixed on top when scroll down down. options (true) or (false)
           sticky_header_height: 250,  // sticky header height top of the screen. activate sticky header when meet the height. option change the height in px value.
           menu_position       : 'horizontal',    // change the menu position. options (horizontal), (vertical-left) or (vertical-right)
           full_width          : false,           // make menu full width. options (true) or (false)

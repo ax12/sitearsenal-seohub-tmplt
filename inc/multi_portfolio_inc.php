@@ -16,7 +16,7 @@
                     echo " <div class=\"col-md-4\"> <div class=\"item demo-1\">";
                     echo "<a target=\"_blank\" href=\"$key[url_link_button]\"> <div class=\"item-box\"> <div class=\"item-inside\">";
                     echo " <span class=\"demo-img\"
-                                          style=\"background-image: url($key[img_main_scroll]);\"></span>  <img class=\"lazy\" src=\"../assets/images/demo/loading.jpg\" data-original=\"../img/vecherya-soloha-400px.jpg\" alt=\"\">";
+                                          style=\"background-image: url($key[img_main_scroll]);\"></span>  <img class=\"lazy\" src=\"../assets/images/demo/loading.jpg\" data-original=\"$key[img_main_scroll]\" alt=\"\">";
                     echo " </div></div></a>";
                     echo " <div class=\"demo-box\"><a href=\"$key[url_link_button]\">  $key[name_button] </a></div>
                     </div>

@@ -1,4 +1,4 @@
-<?php require_once 'topbar.php';?>
+
 <div class="menu">
     <!-- menu start -->
     <nav id="menu" class="mega-menu">

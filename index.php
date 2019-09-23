@@ -1,19 +1,17 @@
+<?php define('TOSIBOSI_LASITRASI', 1); ?>
+<?php require_once 'inc/get_lang_and_locations_inc.php'; //определяем язык или локацию ?>
+<?php require_once 'inc/site_settings_array.php' // connect settings arrays?>
 
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-
-</head>
-
+<html lang="<?php echo $lang; ?>">
+<?php require_once 'inc/style_scripts_header_inc.php' // connect css files?>
 <body>
 <!--=================================
     loading -->
-
+<?php require_once 'inc/topbar.php';?>
 <?php //отключаем или подключаем загрузчик (ракету) настройка в site_settings_array.php
 if ($loader) {
 require_once 'inc/loader.php';};?>
-
 <a href="http://www.designnominees.com/themes/seohub-multipurpose-html5-template" title="Design Nominees"
    style="width:70px;height:130px;position:fixed;top:100px;right:0px;z-index:99999;text-indent:-9999px;background: url(http://www.designnominees.com/ribbons/designnominees-ribbon-totd-white-right.png) no-repeat;"
    target="_blank">Design Nominees</a>
@@ -48,16 +46,25 @@ slider -->
 slider -->
 
 <!--=================================
+HIGH QUALITY DOCUMENTATION -->
+<?php require_once 'inc/about_row.php';?>
+
+<!--=================================
+HIGH QUALITY DOCUMENTATION -->
+
+<!--=================================
+Our FEATURES -->
+<?php require_once 'inc/services_tabs_inc_v2.php';?>
+<!--=================================
+Our FEATURES -->
+
+<!--=================================
 multi-page -->
 <?php require_once 'inc/multi_portfolio_inc.php' ?>
 <!--=================================
 multi-page -->
 
-<!--=================================
-Our FEATURES -->
-<?php require_once 'inc/services_tabs_inc.php';?>
-<!--=================================
-Our FEATURES -->
+
 
 <!--=================================
 Multi-Header -->
@@ -122,34 +129,7 @@ Multi-Header -->
 <!--=================================
 Multi-Header -->
 
-<!--=================================
-HIGH QUALITY DOCUMENTATION -->
-<section class="high-documentation sec-relative pt-5 pb-5 white-bg plr-6">
-    <marquee class="animated-text o-hidden dark">DOCUMENTATION</marquee>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="section-title text-left mt-6">
-                    <h2 class="mb-3">HIGH QUALITY <br>
-                        DOCUMENTATION</h2>
-                    <p class="">Sephub Documentation has been carefully detailed and completed with super easy to
-                        understand instructions giving you the full access to all of its features. Our Documentation
-                        will give you an understanding of how Seohub is structured and guide you in performing common
-                        functions.
 
-                        Documentation also comes with a lot of code structure to help you. If the documentation is not
-                        enough contact us on our support forum.</p>
-                </div>
-            </div>
-            <div class="col-md-6 text-right">
-                <img class="img-fluid" style="display:inline; width:550px" src="../assets/images/mockup.png" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--=================================
-HIGH QUALITY DOCUMENTATION -->
 
 
 <!--=================================

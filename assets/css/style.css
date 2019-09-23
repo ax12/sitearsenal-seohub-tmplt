@@ -11,7 +11,9 @@ NOTE: */
     General
 *************************/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&subset=cyrillic');
-body { font-family: 'Montserrat', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color: #aaaaaa; }
+body { font-family: 'Montserrat', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px;
+	/*color: #aaaaaa; */
+}
 a, .btn { -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #2046f2; text-decoration: none !important; }

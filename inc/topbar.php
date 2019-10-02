@@ -1,7 +1,7 @@
 <div class="topbar">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="topbar-left text-center text-md-left lang-toggle">
                     <ul class="list-inline text-left ">
                         <li><i class="fas fa-globe"></i> <a href="/en/">EN </a></li>
@@ -11,7 +11,7 @@
             </div>
 
 
-            <div class="col-md-3 col-12 float-right d-flex ">
+            <div class="col-md-4 col-12 float-right d-flex ">
                 <div class="topbar-left text-left text-md-left text-light pl-4 ">
                     <div class="float-left mr-3 mx-font-marker"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="float-left mx-lineheight-top-bar"><a class="text-light"
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="col-md-2 col-12 float-right d-flex">
+            <div class="col-md-4 col-12 float-right d-flex">
                 <div class="topbar-left text-left text-md-left text-light pl-4 ">
 
                     <div class="float-left mr-3 mx-font-marker"><i class="fas fa-map-marker-alt"></i></div>

@@ -51,7 +51,7 @@ HIGH QUALITY DOCUMENTATION -->
 
 <!--=================================
 HIGH QUALITY DOCUMENTATION -->
-
+<?php require_once 'inc/tabs.php' ?>
 <!--=================================
 Our FEATURES -->
 <?php require_once 'inc/services_tabs_inc_v2.php';?>
@@ -61,6 +61,7 @@ Our FEATURES -->
 <!--=================================
 multi-page -->
 <?php require_once 'inc/multi_portfolio_inc.php' ?>
+
 <!--=================================
 multi-page -->
 
@@ -160,22 +161,10 @@ Rating -->
 <!--=================================
 Footer-->
 
-<footer class="page-section-ptb footer bg fixed bg-overlay-black-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-widget text-center">
-<!--                    <h2 class="title text-white">Get Seohub Template Now!</h2>-->
-<!--                    <p class="text-white">All live demo pages are included in the download package <br>with Seohub-->
-<!--                        Documentation</p>-->
-<!--                    <a target="_blank" class="button purchase-btn"-->
-<!--                       href="https://themeforest.net/item/seohub-seo-marketing-social-media-multipurpose-html5-template/20234006/?ref=Potenzaglobalsolutions"><i-->
-<!--                                class="fa fa-cart-arrow-down" aria-hidden="true"></i> Purchase now</a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<?php
+require_once 'footer.php';
+?>
+?>
 
 <!--=================================
 Footer-->

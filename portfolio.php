@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="SEOhub - SEO, Marketing. Social Media, Multipurpose HTML5 Template" />
-    <meta name="author" content="potenzaglobalsolutions.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>SEOhub - SEO, Marketing. Social Media, Multipurpose HTML5 Template</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    
-    <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    
-    <!-- mega menu -->
-    <link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
-    
-    <!-- font awesome -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    
-    <!-- Themify icons -->
-    <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
-    
-        <!-- main style -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    
-	<!-- Responsive style -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
- 
+<?php require_once 'incs/header_incs_inside.php'; ?>
 
-
-    
-    </head>
 
 <body>
     <!--=================================
@@ -48,11 +15,9 @@
     <!--=================================
       loading -->
 
-
     <!--=================================
         header -->
-
-   <header id="header" class="default">
+    <header id="header" class="default">
         <div class="topbar">
             <div class="container">
                 <div class="row">
@@ -85,7 +50,7 @@
             <!-- menu start -->
             <nav id="menu" class="mega-menu">
                 <!-- menu list items container -->
-                <section class="menu-list-items">
+                <div class="menu-list-items">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -97,7 +62,7 @@
                                 </ul>
                                 <!-- menu links -->
                                 <ul class="menu-links">
-                                    <!-- active class -->
+                                  
                                     <li><a href="javascript:void(0)"> Home <i class="fa fa-angle-down fa-indicator"></i></a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
@@ -108,7 +73,7 @@
                                             <li><a href="index-5.html">home 05</a></li>
                                         </ul>
                                     </li>
-                                    <!-- active class -->
+                                    
                                     <li><a href="javascript:void(0)"> services <i class="fa fa-angle-down fa-indicator"></i></a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
@@ -121,7 +86,7 @@
                                             <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active"><a href="javascript:void(0)">Pages <i class="fa fa-angle-down fa-indicator"></i></a>
+                                    <li><a href="javascript:void(0)">Pages <i class="fa fa-angle-down fa-indicator"></i></a>
                                         <!-- drop down multilevel  -->
                                         <div class="drop-down menu-bg grid-col-12">
                                             <!--grid row-->
@@ -158,7 +123,7 @@
                                                         <li><a href="accordion.html">Accordion</a></li>
                                                         <li><a href="typography.html">Typography</a></li>
                                                         <li><a href="buttons.html">Buttons</a></li>
-                                                        <li class="active"><a href="pricing-tables.html">Pricing Tables</a></li>
+                                                        <li><a href="pricing-tables.html">Pricing Tables</a></li>
                                                         <li><a href="tab.html">Tab</a></li>
                                                     </ul>
                                                 </div>
@@ -196,17 +161,19 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="javascript:void(0)">Case Studies <i class="fa fa-angle-down fa-indicator"></i></a>
+                                    <!-- active class -->
+                                    <li class="active"><a href="javascript:void(0)">Case Studies <i class="fa fa-angle-down fa-indicator"></i></a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
                                             <li><a href="case-studies-2-columns.html">case studies 2 columns</a></li>
                                             <li><a href="case-studies-3-columns.html">case studies 3 columns</a></li>
                                             <li><a href="case-studies-4-columns.html">case studies 4 columns</a></li>
-                                            <li><a href="case-studies-filter.html">case studies filter</a></li>
+                                            <li class="active"><a href="case-studies-filter.html">case studies filter</a></li>
                                             <li><a href="case-studies-full-screen.html">case studies full screen</a></li>
                                             <li><a href="case-studies-single.html">case studies single</a></li>
                                         </ul>
                                     </li>
+                                    <!-- active class -->
                                     <li><a href="javascript:void(0)"> Shop <i class="fa fa-angle-down fa-indicator"></i> </a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
@@ -214,7 +181,7 @@
                                             <li><a href="shop-single.html">Shop Single</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="javascript:void(0)"> Contact us <i class="fa fa-angle-down fa-indicator"></i> </a>
+									<li><a href="javascript:void(0)"> Contact us <i class="fa fa-angle-down fa-indicator"></i> </a>
                                         <!-- drop down multilevel  -->
                                         <ul class="drop-down-multilevel">
                                             <li><a href="contact-single-office.html">contact single office </a></li>
@@ -240,12 +207,11 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </nav>
             <!-- menu end -->
         </div>
     </header>
-
     <!--=================================
 search and side menu content -->
     <div class="search-overlay"></div>
@@ -317,21 +283,20 @@ search and side menu content -->
 header -->
     <!--=================================
 intro-title -->
-    <section class="intro-title black-bg">
+    <section class="intro-title blue-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left">
                     <div class="intro-content">
                         <div class="intro-name">
-                            <h3 class="text-white">Pricing Tables</h3>
+                            <h3 class="text-white">Case Studie</h3>
                             <ul class="breadcrumb mt-1">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item text-white">Pages</li>
-                                <li class="breadcrumb-item active">Pricing Tables</li>
+                                <li class="breadcrumb-item active">Case Studie</li>
                             </ul>
                         </div>
                         <div class="intro-img">
-                            <img class="img-fluid" src="images/breadcrumb/02.png" alt="">
+                            <img class="img-fluid" src="images/breadcrumb/01.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -341,173 +306,261 @@ intro-title -->
     <!--=================================
 intro-title -->
     <!--=================================
-page-section -->
-    <section class="page-section-ptb">
+case-studies  -->
+    <section class="case-studies page-section-ptb">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title text-center">
-                        <span>Choose your plan</span>
-                        <h3 class="text-center">Our Pricing Packages</h3>
+                 <div class="col-md-12 text-center">
+                <div class="case-studies-filters">
+                    <div class="isotope-filters">
+                        <button data-filter="" class="active">All</button>
+                        <button data-filter=".marketing">Marketing</button>
+                        <button data-filter=".seo">Seo</button>
+                        <button data-filter=".projets">Projets</button>
+                        <button data-filter=".social">Social</button>
+                        <button data-filter=".ranking">Ranking</button>
+                        <button data-filter=".developing">Разработка</button>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 bottom-m3">
-                    <div class="pricing text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <img class="mt-2 mb-2" src="images/icon/06.png" alt="">
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
-                            </div>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black" href="#">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 bottom-m3">
-                    <div class="pricing active text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <img class="mt-2 mb-2" src="images/icon/05.png" alt="">
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
+                    <div class="isotope popup-gallery column-3">
+                        <div class="grid-item seo projets social">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/01.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/01.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Social Media Marketing</a>
+                                        <p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black active" href="#">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <img class="mt-2 mb-2" src="images/icon/09.png" alt="">
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
-                            </div>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black" href="#">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-10">
-                <div class="col-md-4 bottom-m3">
-                    <div class="pricing pricing-01 text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN1</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <div class="pricing-img">
-                                <img src="images/icon/06.png" alt="">
-                            </div>
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
+                        <div class="grid-item projets ranking">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/02.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/02.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Free Techincal Audit</a>
+                                        <p class="mt-1">Established fact that It is a long a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black" href="#">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 bottom-m3">
-                    <div class="pricing pricing-01 active text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <div class="pricing-img">
-                                <img src="images/icon/05.png" alt="">
-                            </div>
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
+                        <div class="grid-item marketing seo">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/03.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/03.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Online Marketing</a>
+                                        <p class="mt-1">Distracted by the readable It is a long established fact that a reader will be content of a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black active" href="#">Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing pricing-01 text-center">
-                        <div class="pricing-title">
-                            <div class="section-title text-center">
-                                <h5 class="text-center">STANDARD PLAN</h5>
-                                <span>The best to start</span>
-                            </div>
-                            <div class="pricing-img">
-                                <img src="images/icon/09.png" alt="">
-                            </div>
-                            <div class="pricing-prize">
-                                <h2 class="text-black"><span>$ </span>20.99 <span>/PER MONTH</span></h2>
+                        <div class="grid-item seo social">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/04.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/04.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Global Designing</a>
+                                        <p class="mt-1">Readable content of It is a long established fact that a reader will be distracted by the a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>25 Analytics Compaign</li>
-                                <li>Branded Reports</li>
-                                <li>1,900 Keywords</li>
-                                <li>4 Social Account</li>
-                            </ul>
+                        <div class="grid-item developing">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/04.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/04.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Разработка</a>
+                                        <p class="mt-1">Readable content of It is a long established fact that a reader will be distracted by the a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pricing-order mt-3">
-                            <a class="button black" href="#">Purchase</a>
+                        <div class="grid-item projets ranking">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/05.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/05.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Global Advertising</a>
+                                        <p class="mt-1">Dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item marketing seo">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/06.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/06.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Global SEO</a>
+                                        <p class="mt-1">Eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item projets ranking">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/07.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/07.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">Advertisement</a>
+                                        <p class="mt-1">Consectetur adipisicing Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item social ranking">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/08.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/08.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">SCHEDULED POSTING</a>
+                                        <p class="mt-1">Eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item marketing projets last">
+                            <div class="studies-entry">
+                                <div class="entry-image clearfix">
+                                    <img class="img-fluid" src="images/case-studies/01.jpg" alt="">
+                                    <div class="entry-overlay">
+                                        <a class="popup-img" href="images/case-studies/01.jpg"> <span class="ti-zoom-in"></span></a>
+                                    </div>
+                                </div>
+                                <div class="entry-detail text-left">
+                                    <div class="entry-content mb-1">
+                                        <a href="#">ONLINE SUPPORT</a>
+                                        <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="entry-bottom mt-1 clearfix">
+                                        <ul class="entry-tag list-style-none">
+                                            <li><a href="#">SEO hub</a></li>
+                                        </ul>
+                                        <div class="entry-like float-right">
+                                            <a href="#"> <span class="ti-heart"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -515,7 +568,9 @@ page-section -->
         </div>
     </section>
     <!--=================================
-page-section -->
+case-studies  -->
+
+
 <!--=================================
 footer -->
 
@@ -676,17 +731,18 @@ footer -->
 <!--=================================
 footer -->
 
-   
+
+  
 
 
 <!--=================================
 back to top -->
  <div class="back-to-top">
-    <span><img src="images/rocket.png" data-src="images/rocket.png" data-hover="images/rocket.gif" alt=""></span>
+     <span><img src="images/rocket.png" data-src="images/rocket.png" data-hover="images/rocket.gif" alt=""></span>
  </div>
 <!--=================================
 back to top -->
-
+    
     <!-- jquery  -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -694,8 +750,17 @@ back to top -->
     <!-- bootstrap -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     
-    <!-- mega-menu -->
+    <!-- bootstrap -->
     <script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+    
+    <!-- owl-carousel -->
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+    
+    <!-- isotope -->
+    <script type="text/javascript" src="js/isotope/isotope.pkgd.min.js"></script>
+    
+    <!-- magnific -->
+    <script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
  
     
     <!-- custom -->

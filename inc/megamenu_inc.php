@@ -65,7 +65,7 @@ search and side menu content -->
         <div class="menu-toggle-hamburger menu-close"><i class="mx-icons-hover far fa-times-circle"></i></div>
         <div class="side-logo">
             <img class="img-fluid mb-3" src="../assets/images/logo-dark.png" alt="">
-            <p><?php echo $right_side_bar[text_after_logo];?></p>
+            <p><?php echo $right_side_bar['text_after_logo'];?></p>
             <hr class="mt-2 mb-3"/>
         </div>
         <div class="contact-address">

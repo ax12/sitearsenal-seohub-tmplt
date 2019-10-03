@@ -13,7 +13,7 @@ class ViewsController
     public function actionPortfolio()
     {
          Page::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
-        echo ' lorem ';
+        require ROOT . '/templates/portfolio_template.php';
          Page::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
 //
         return true;

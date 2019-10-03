@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="section-title text-left mt-6">
-                    <h2 class=""> <?php echo $about_row[header1]; ?>  <br>
-                        <?php echo $about_row[header2]; ?></h2>
-                    <p class=""><?php echo $about_row[description]; ?></p>
+                    <h2 class=""> <?php echo $about_row['header1']; ?>  <br>
+                        <?php echo $about_row['header2']; ?></h2>
+                    <p class=""><?php echo $about_row['description']; ?></p>
                 </div>
             </div>
             <div class="col-md-6 text-right">

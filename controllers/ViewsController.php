@@ -1,25 +1,29 @@
 <?php
 
+include_once ROOT . '/models/Page.php'; //подключили класса для получения данных для отображения на странице
 class ViewsController
 {
 
-    public function actionMainpage()
+    public function actionMain()
     {
-        echo 'actionMainpage';
-        return true;
-
+        echo 'Сработал Экшен Mainpage';
+        require_once 'main-page.php';
     }
-
 
     public function actionPortfolio()
     {
-        echo 'actionPortfolio';
+         Page::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
+        echo ' lorem ';
+         Page::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+//
         return true;
     }
 
     public function actionDezign()
     {
+        Page::getHeader();
         echo 'actionDezign';
+        Page::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
         return true;
     }
 }

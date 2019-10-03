@@ -1,10 +1,8 @@
 <?php
 
-if (!defined('TOSIBOSI_LASITRASI')) {
-    echo 'no';
-    die();
-}
+
 //общие настройки для всех версий
+$url_page = $_SERVER['REQUEST_URI'];
 $loader = false;
 $dark_logo = '/img/dark-logo.png';
 $light_logo = '/img/light-logo.png';
@@ -318,12 +316,5 @@ if ($url_page == '/en/') { //выдача по адресу sitearsenal.ru/en/, 
 
 
 
-/*my functions*/
 
-function myDebug () //все переменные которые существуют в скрипте
-{
-    echo '<pre>';
-    print_r(get_defined_vars());
-    echo '</pre>';
-};
 

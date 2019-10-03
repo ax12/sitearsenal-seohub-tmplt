@@ -2,6 +2,7 @@ AddDefaultCharset UTF-8
 RewriteEngine on
 
 RewriteBase /
+RewriteRule ^(.*)$ index.php
 RewriteCond %{HTTP_HOST} (.*)
 RewriteCond %{REQUEST_URI} /$ [NC]
 RewriteRule ^(.*)(/)$ $1 [L,R=301]
@@ -13,4 +14,6 @@ RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
 RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 RewriteRule .* - [L,R=404]
 RewriteRule ^(.*)/$ $1 [L,R=301]
+
+
 

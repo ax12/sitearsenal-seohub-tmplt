@@ -5,7 +5,7 @@ if (!defined('TOSIBOSI_LASITRASI')) {
     die();
 }
 //общие настройки для всех версий
-$loader = true;
+$loader = false;
 $dark_logo = '/img/dark-logo.png';
 $light_logo = '/img/light-logo.png';
 

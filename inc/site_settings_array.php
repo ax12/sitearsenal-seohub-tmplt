@@ -6,6 +6,7 @@ $url_page = $_SERVER['REQUEST_URI'];
 $loader = false;
 $dark_logo = '/img/dark-logo.png';
 $light_logo = '/img/light-logo.png';
+$img_header_inside = true; //картинка на внутреннем хедере под главным меню
 
 $main_contacts = array(
     'ekb' => array(
@@ -64,11 +65,8 @@ if ($url_page) { //Екатеринбург, язык русский
             'WEB Дизайн' => '/',
             'Продвижение' => '/',
         ),
-        'Наши преимущества' => array(
-            'Скорость' => '/',
-            'Медленность' => '/',
-            'Блаблаблашность' => '/',
-        ),
+        'Наши преимущества' => '/preimishestva',
+
         'Портфолио' => '/',
         'Блог' => '/',
         'Контакты' => '/',

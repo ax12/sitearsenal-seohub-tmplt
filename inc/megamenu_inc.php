@@ -26,8 +26,12 @@
 
                             <?php
                             foreach ($main_menu as $key => $value) {
-
-                                echo " <li class=\"active\"><a href=\"javascript:void(0)\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
+                                if (!is_array($value)) {
+                                    $link = $value;
+                                }else {
+                                    $link = 'javascript:void(0)';
+                                }
+                                echo " <li class=\"active\"><a href=\"$link\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
                                 echo "<ul class=\"drop-down-multilevel\">";
                                 if (is_array($main_menu[$key])) {
                                     foreach ($main_menu[$key] as $key_in => $value_in) {

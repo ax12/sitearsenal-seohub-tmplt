@@ -1,5 +1,6 @@
 <?php
 
+echo 'site_settings_array.php подключен';
 
 //общие настройки для всех версий
 $url_page = $_SERVER['REQUEST_URI'];
@@ -55,21 +56,16 @@ if ($url_page) { //Екатеринбург, язык русский
 
 //главное меню сайта
     $main_menu = array(
-        'Главная' => array(
-            'О компании' => '/',
+        'Главная' =>'/',
+        'О компании' => array(
             'Портфолио' => 'portfolio',
             'Технологии' => '/',
         ),
-        'Услуги' => array(
-            'WEB разработка' => '/',
-            'WEB Дизайн' => '/',
-            'Продвижение' => '/',
-        ),
         'Наши преимущества' => '/preimishestva',
 
-        'Портфолио' => '/',
-        'Блог' => '/',
-        'Контакты' => '/',
+        'Портфолио' => 'portfolio',
+        'Блог' => 'blog',
+        'Контакты' => 'contact',
     );
 //правый выезжающий сайдбар с контактной информацией
     $right_side_bar = array(
@@ -184,7 +180,11 @@ if ($url_page == '/krasnodar/') { //Краснодар, язык русский
             'Медленность' => '/',
             'Блаблаблашность' => '/',
         ),
-        'Портфолио' => '/',
+        'Портфолио' => array(
+            'Скорость' => '/',
+            'Медленность' => '/',
+            'Блаблаблашность' => '/',
+        ),
         'Блог' => '/',
         'Контакты' => '/',
     );
@@ -214,31 +214,47 @@ $portfolio_items = array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/vecherya-soloha-550px.jpg',
+        'type' => 'dezign development ranking',
+//        'dezign' => 'Дизайн',
+//        'projects' => 'WEB Разработка',
+//        'landing' => 'Лэндинг',
+//        'ranking' => 'Текущие проекты',
+//        'seo' => 'SEO',
+//        'upwork' => 'Upwork projects',
+
     ),
     'instrument-ekat' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/instrument-ekat-550px.jpg',
+        'type' => 'landing development',
+        'header' => 'Прокат Инструмента',
+        'description' => 'Прокат электро и бензоинструмента в Екатеринбурге. Лэндинг с возможностью расширения до полноценного каталога проката строительного инструмента',
+        'url' => 'https://instrument-ekat.ru',
     ),
     'pelemeshka-ekb' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/pelemeshka-ekb-550px.jpg',
+        'type' => 'seo development',
     ),
     '4elementstobacco' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/4elementstobacco-550px.jpg',
+        'type' => 'dezign development upwork',
     ),
     'air-parking' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/air-parking-550px.jpg',
+        'type' => 'landing development',
     ),
     'krasnodar.internet-doma' => array(
         'url_link_button' => '#',
         'name_button' => 'Подробнее',
         'img_main_scroll' => '../img/krasnodar.internet-doma-550px.jpg',
+        'type' => 'landing seo development',
     ),
 );
 /*КОНЕЦ ****Массивы данных для русскоязычного ПОРТФОЛИО, данные подходят для Краснодара и Екатеринбурга******************КОНЕЦ*/

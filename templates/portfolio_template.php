@@ -14,6 +14,7 @@
 
                     </div>
                     <div class=" row isotope popup-gallery ">
+
                         <?php foreach ($portfolio_items as $project_name => $items_projects): ?>
                         <div class="grid-item col-sm-12 col-md-4  <?php echo $items_projects['type']?>">
                             <div class="studies-entry">
@@ -31,7 +32,7 @@
                                     </div>
                                     <div class="entry-bottom mt-1 clearfix">
                                         <ul class="entry-tag list-style-none">
-                                            <li> <noindex> <a href="<?php echo $items_projects['url']?>" target="_blank"><?php echo $items_projects['url']?></a></noindex></li>
+                                            <li> <noindex> url: <a href="http://<?php echo $items_projects['url']?>" target="_blank"><?php echo $items_projects['url']?></a></noindex></li>
                                         </ul>
                                         <div class="entry-like float-right">
                                             <a href="#"> <span class="ti-heart"></span></a>

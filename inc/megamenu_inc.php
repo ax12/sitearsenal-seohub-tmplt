@@ -110,10 +110,12 @@ search and side menu content -->
                         <span>24 X 7 online support</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="side-content-image">
+    <div class="side-content-image text-center">
+        <a href="/admin" class="text-light text-center button border-white mt-8" >войти</a>
         <img class="img-fluid center-block" src="../assets/images/04.png" alt="">
     </div>
 </div>

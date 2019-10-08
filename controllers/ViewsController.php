@@ -18,6 +18,14 @@ class ViewsController
 //
         return true;
     }
+    public function actionLogin()
+    {
+         Page::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
+        require ROOT . '/views/user/login.php';
+         Page::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+//
+        return true;
+    }
 
     public function actionDezign()
     {

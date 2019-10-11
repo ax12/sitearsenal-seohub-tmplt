@@ -9,6 +9,15 @@ class ViewsController
         echo 'Сработал Экшен Mainpage';
         require_once 'main-page.php';
     }
+    public function actionAuthorization()
+    {
+        Page::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
+        echo 'Сработал Экшен Authorization';
+        require ROOT . '/templates/login_template.php';
+        Page::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+
+
+    }
 
     public function actionPortfolio()
     {

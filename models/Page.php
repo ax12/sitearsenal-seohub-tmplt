@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: max
- * Date: 03.10.2019
- * Time: 21:29
- */
+
 
 class Page
 {

@@ -12,6 +12,21 @@ class Router
 
     }
 
+    /*проверить авторизацию*/
+
+    /**
+     * @return mixed
+     */
+    public function checkAuthorization()
+    {
+        if (!$_SESSION){
+            require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
+            $mainObject = new ViewsController; //создали объект класса
+            $mainObject->actionAuthorization(); // обратились к экшену объекта
+        }
+    }
+
+
     /*получаем строку запроса из адресной строки
     * браузера
      */

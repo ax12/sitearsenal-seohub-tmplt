@@ -46,7 +46,7 @@ class Router
         if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса
-            $mainObject->actionMain(); // обратились к экшену объекта
+            $mainObject->actionMain(); // обратились к экшену объект а
 
         }
         /*Выход админа, переход по адресу do=logaut (в Массиве $_GET['do'] попадает значение logaut) */

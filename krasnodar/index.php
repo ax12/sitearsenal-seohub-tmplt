@@ -1,4 +1,4 @@
 <?php
 $lang = $_SERVER['REQUEST_URI'];
-require_once '../index.php'
+require_once '../main-page.php'
 ?>

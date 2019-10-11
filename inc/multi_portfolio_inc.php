@@ -1,11 +1,11 @@
 <section class="demo-sec light-blue-bg page-section-ptb plr-6 sec-relative" id="scroll-buttons">
-    <marquee class="animated-text o-hidden white"><?php echo $portfolio_arr[second_header];?></marquee>
+    <marquee class="animated-text o-hidden white"><?php echo $portfolio_arr['second_header'];?></marquee>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="section-title text-center">
-                    <span><?php echo $portfolio_arr[first_header]?> </span>
-                    <h2 class="mb-3"><?php echo $portfolio_arr[second_header]?></h2>
+                    <span><?php echo $portfolio_arr['first_header']?> </span>
+                    <h2 class="mb-3"><?php echo $portfolio_arr['second_header']?></h2>
                 </div>
             </div>
         </div>

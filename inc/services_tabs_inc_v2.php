@@ -2,10 +2,10 @@
     <div class="row">
         <div class="col-lg-3 col-md-12  blue-bg mb-2">
             <div class="services-info h-100">
-                <h3 class="text-white mb-3"><?php echo $service_tabs_v2[header]; ?></h3>
-                <p class="text-white mb-2"><?php echo $service_tabs_v2[text1]; ?></p>
-                <p class="text-white mb-4"><?php echo $service_tabs_v2[text2]; ?> </p>
-                <a class="button border-white" href="<?php echo $service_tabs_v2[button_url]; ?>"><?php echo $service_tabs_v2[button_name]; ?></a>
+                <h3 class="text-white mb-3"><?php echo $service_tabs_v2['header']; ?></h3>
+                <p class="text-white mb-2"><?php echo $service_tabs_v2['text1']; ?></p>
+                <p class="text-white mb-4"><?php echo $service_tabs_v2['text2']; ?> </p>
+                <a class="button border-white" href="<?php echo $service_tabs_v2['button_url']; ?>"><?php echo $service_tabs_v2['button_name']; ?></a>
             </div>
         </div>
         <div class="col-lg-9 col-md-12">

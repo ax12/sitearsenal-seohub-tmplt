@@ -1,4 +1,3 @@
-
 <div class="menu">
     <!-- menu start -->
     <nav id="menu" class="mega-menu">
@@ -27,14 +26,19 @@
 
                             <?php
                             foreach ($main_menu as $key => $value) {
-                                echo " <li class=\"active\"><a href=\"javascript:void(0)\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
-                                    echo "<ul class=\"drop-down-multilevel\">";
-                                         if (is_array($main_menu[$key])) {
-                                                foreach ($main_menu[$key] as $key_in => $value_in) {
-                                                    echo "<li><a href=\"$value_in\"> $key_in </a></li >";
-                                                }
-                                            }
-                                    echo "</ul>";
+                                if (!is_array($value)) {
+                                    $link = $value;
+                                }else {
+                                    $link = 'javascript:void(0)';
+                                }
+                                echo " <li class=\"active\"><a href=\"$link\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
+                                echo "<ul class=\"drop-down-multilevel\">";
+                                if (is_array($main_menu[$key])) {
+                                    foreach ($main_menu[$key] as $key_in => $value_in) {
+                                        echo "<li><a href=\"$value_in\"> $key_in </a></li >";
+                                    }
+                                }
+                                echo "</ul>";
                             };
 
                             ?>
@@ -65,7 +69,7 @@ search and side menu content -->
         <div class="menu-toggle-hamburger menu-close"><i class="mx-icons-hover far fa-times-circle"></i></div>
         <div class="side-logo">
             <img class="img-fluid mb-3" src="../assets/images/logo-dark.png" alt="">
-            <p><?php echo $right_side_bar[text_after_logo];?></p>
+            <p><?php echo $right_side_bar['text_after_logo']; ?></p>
             <hr class="mt-2 mb-3"/>
         </div>
         <div class="contact-address">
@@ -109,8 +113,12 @@ search and side menu content -->
             </div>
         </div>
     </div>
-    <div class="side-content-image">
-        <img class="img-fluid center-block" src="../assets/images/04.png" alt="">
+    <div class="side-content-image text-center">
+        <?php
+        if ($_SESSION['admin']) { ?>
+            <a class="button border" href="admin.php?do=logout">Выход</a>
+        <?php };  ?>
+        <img class="img-fluid center-block " src="../assets/images/04.png" alt="">
     </div>
 </div>
 <!--=================================

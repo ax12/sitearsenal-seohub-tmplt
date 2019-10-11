@@ -1,5 +1,5 @@
 <?php
-echo 'portfolio_content.php подключен <br>';
+if ( $GLOBALS['$devMess']) echo 'Массив с данными content/portfolio_content.php подключен <br>';
 
 $portfolio_inside = array(
     'dezign' => 'Дизайн',

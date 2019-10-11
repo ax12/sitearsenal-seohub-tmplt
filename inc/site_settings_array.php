@@ -1,6 +1,6 @@
 <?php
 
-echo 'site_settings_array.php подключен';
+if ( $GLOBALS['$devMess']) echo '<br> Мавссив с данными site_settings_array.php успешно подключен';
 
 //общие настройки для всех версий
 $url_page = $_SERVER['REQUEST_URI'];

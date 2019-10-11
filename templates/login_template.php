@@ -16,6 +16,14 @@ if($_POST['submit']){
         exit;
     }else echo '<p>Логин или пароль неверны!</p>';
 }
+
+
+
+if($_GET['do'] == 'logout'){
+    unset($_SESSION['admin']);
+    session_destroy();
+}
+
 ?>
 
 <section class="login-form page-section-ptb">

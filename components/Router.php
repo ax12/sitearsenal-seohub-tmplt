@@ -49,6 +49,14 @@ class Router
             $mainObject->actionMain(); // обратились к экшену объекта
 
         }
+        /*Выход админа, переход по адресу do=logaut (в Массиве $_GET['do'] попадает значение logaut) */
+        if ($_GET['do']== 'logout') {
+            unset($_SESSION['admin']);
+            session_destroy();
+            header("Location: /");
+        }
+
+
 
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
 
@@ -80,6 +88,13 @@ class Router
                 }
 
 
+            }else {
+               /* Если URL не найден в роутах (файл /config/routes.php)
+               вызываем action404 класса ViewsController из
+               файла /controllers/ViewsController.php*/
+                include_once ROOT . '/controllers/ViewsController.php';;
+                $conrolerObject = new ViewsController;
+                $conrolerObject->action404();
             }
         }
 

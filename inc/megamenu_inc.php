@@ -113,8 +113,12 @@ search and side menu content -->
             </div>
         </div>
     </div>
-    <div class="side-content-image">
-        <img class="img-fluid center-block" src="../assets/images/04.png" alt="">
+    <div class="side-content-image text-center">
+        <?php
+        if ($_SESSION['admin']) { ?>
+            <a class="button border" href="admin.php?do=logout">Выход</a>
+        <?php };  ?>
+        <img class="img-fluid center-block " src="../assets/images/04.png" alt="">
     </div>
 </div>
 <!--=================================

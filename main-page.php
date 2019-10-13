@@ -1,7 +1,7 @@
 <?php require 'inc/site_settings_array.php'; ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
-<?php require_once 'inc/style_scripts_header_inc.php'; // connect css files?>
+<?php require_once ROOT . '/inc/style_scripts_header_inc.php'; // connect css files?>
 <body>
 <!--=================================
     loading -->
@@ -25,12 +25,12 @@ require_once 'inc/loader.php';};?>
     loading -->
 <!--=================================
     header -->
-<header id="header" class="transparent">
+
     <!--=================================
         mega menu -->
    <?php require_once 'inc/megamenu_inc.php' //including horizontal main megamenu;?>
 
-</header>
+
 <!--=================================
 header -->
 

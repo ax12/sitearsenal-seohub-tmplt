@@ -209,18 +209,25 @@ $portfolio_arr = array( //используются в файле inc/multi_portf
     'second_header' => 'ПОРТФОЛИО',
 );
 //массив с проектами
-$portfolio_items = array(
-    'vecherya-soloha' => array(
-        'url_link_button' => '#',
-        'name_button' => 'Подробнее',
-        'img_main_scroll' => '../img/vecherya-soloha-550px.jpg',
-        'type' => 'dezign development ranking',
+//КАТЕГОРИИ ДЛЯ ФИЛЬТРА НА СТРАНИЦЕ portfolio
+//указать без запятых в элементе массива 'type'
 //        'dezign' => 'Дизайн',
 //        'projects' => 'WEB Разработка',
 //        'landing' => 'Лэндинг',
 //        'ranking' => 'Текущие проекты',
 //        'seo' => 'SEO',
 //        'upwork' => 'Upwork projects',
+
+$portfolio_items = array(
+    'vecherya-soloha' => array(
+        'url_link_button' => '#',
+        'name_button' => 'Подробнее',
+        'img_main_scroll' => '../img/vecherya-soloha-550px.jpg',
+        'type' => 'dezign development  projects',
+        'header' => 'Ресторан "Корчма Вечеря у солохи"',
+        'description' => 'Сайт ресторана украинской кухни в Екатеринбурге, разработка дизайна, адаптивная верстка, CMS WordPress',
+        'url' => 'https://vecherya-soloha.ru/',
+
 
     ),
     'instrument-ekat' => array(

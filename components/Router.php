@@ -88,13 +88,6 @@ class Router
                 }
 
 
-            }else {
-               /* Если URL не найден в роутах (файл /config/routes.php)
-               вызываем action404 класса ViewsController из
-               файла /controllers/ViewsController.php*/
-                include_once ROOT . '/controllers/ViewsController.php';;
-                $conrolerObject = new ViewsController;
-                $conrolerObject->action404();
             }
         }
 

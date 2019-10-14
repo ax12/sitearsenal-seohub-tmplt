@@ -89,16 +89,18 @@ class Router
     /*для всех пользователей*/
     public function runAll()
     {
+        if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> Router::runAll -></div>';
         $uri = $this->getURI(); //обращаемся к (private function getURI) и получаем строку запроса в переменную $uri из private функции этого класса;
 
         if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
+            if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> Подключили /controllers/ViewsController.php из метода runAll -></div>';
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса
             $mainObject->actionMainAll(); // обратились к экшену объект а
-
+        }
 //        }
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
-
+            if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> foreach в методе runAll <br></div>';
             /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
             $uroPattern  - то что указано в маршрутах, $uri - то что пришло из строки браузера */
             if (preg_match("~^$uriPattern\b~", $uri)) {
@@ -132,4 +134,4 @@ class Router
         }
 
     }
-}}
+}

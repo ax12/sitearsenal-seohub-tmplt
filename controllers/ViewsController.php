@@ -6,10 +6,10 @@ class ViewsController
 
     public function actionMainAll()
     {
-        if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAll</div>';;
-        PageForAll::getMainHeader();
-        PageForAll::getMainPageContentAll();
-        PageForAll::getMainFooter();
+        if ( $GLOBALS['$devMess'] || $GLOBALS ['$mxDebugAllUsers']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAll</div>';;
+        PageForAdmin::getMainHeader();
+        PageForAdmin::getMainPageContentAll();
+        PageForAdmin::getMainFooter();
 //
         return true;
     }

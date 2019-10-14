@@ -266,6 +266,12 @@ div#main { z-index: 1; position: relative; }
     font-size: 12px;
     background-color: #10944a;
     z-index: 1000;
-
-
+}
+/*сообщения отладки под любым пользователем*/
+.debugallusers {
+    color: #ff0019;
+    /*position: absolute;*/
+    font-size: 12px;
+    background-color: #f2e214;
+    z-index: 1000;
 }

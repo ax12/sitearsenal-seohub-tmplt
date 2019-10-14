@@ -1,4 +1,5 @@
 <div class="topbar">
+   <?php if ( $GLOBALS['$devMess']) echo '<div class="debug-msg">подключен(inc/topbar.php)</div>'; ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">

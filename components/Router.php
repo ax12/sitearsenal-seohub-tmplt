@@ -1,4 +1,5 @@
 <?php
+/*Выводит имя файла в котором она написана*/
 
 class Router
 {
@@ -12,17 +13,13 @@ class Router
 
     }
 
-    /*проверить авторизацию*/
-
-    /**
-     * @return mixed
-     */
-    public function checkAuthorization()
+    /*если не авторизован*/
+    public function getAuthorization()
     {
-        if (!$_SESSION){
+        if (!$_SESSION) {
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса
-            $mainObject->actionAuthorization(); // обратились к экшену объекта
+            $mainObject->actionAuthorization();// обратились к экшену объекта
         }
     }
 
@@ -39,25 +36,67 @@ class Router
 
     }
 
-    public function run()
+    public function runAdmin()
     {
         $uri = $this->getURI(); //обращаемся к (private function getURI) и получаем строку запроса в переменную $uri из private функции этого класса;
 
         if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса
-            $mainObject->actionMain(); // обратились к экшену объект а
-
+            $mainObject->actionMainAdmin(); // обратились к экшену объект а
         }
-        /*Выход админа, переход по адресу do=logaut (в Массиве $_GET['do'] попадает значение logaut) */
-        if ($_GET['do']== 'logout') {
-            unset($_SESSION['admin']);
-            session_destroy();
-            header("Location: /");
+        /*Выход админа, переход по адресу do=logaut (в Массиве $_GET['do'] попадает значение logout) */
+
+
+
+        foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
+                echo 'Форич';
+            /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
+            $uroPattern  - то что указано в маршрутах, $uri - то что пришло из строки браузера */
+            if (preg_match("~^$uriPattern\b~", $uri)) {
+                /*определяем какой контроллер и какой экшен в нем будет опрабатывать запрос
+                для этого в переменную $segments запишем массив из составляющих адресной строки, каждый элемент
+                массива отделен косой чертой   */
+                $segments_url = explode('/', $path);
+                //вычисляем имя контроллера для этого запроса
+                $controllerName = array_shift($segments_url) . 'Controller'; //array_shift возвращает первый элемент массива, удаляя его из массива
+                $controllerName = ucfirst($controllerName); //делаем первую букву заглавной
+                /*определяем какой экшен будет использоваться*/
+                $actionName = 'action' . ucfirst(array_shift($segments_url));
+
+                /*подключаем файл контроллера*/
+                $conrollerFile = ROOT . '/controllers/' . $controllerName . '.php'; //записали имя файла
+
+                if (file_exists($conrollerFile)) { //проверим его наличие
+                    echo "Подключен файл контроллера" . $conrollerFile;
+                    include_once($conrollerFile);
+                }
+
+                /*Создаем объект класса и вызываем нужный экшен из класса контроллера*/
+                $conrolerObject = new $controllerName;
+                $result = $conrolerObject->$actionName();
+                if ( $GLOBALS['$devMess']) echo $actionName();
+                if ($result = !null) {
+                    break;
+                }
+
+
+            }
         }
 
+    }
 
+    /*для всех пользователей*/
+    public function runAll()
+    {
+        $uri = $this->getURI(); //обращаемся к (private function getURI) и получаем строку запроса в переменную $uri из private функции этого класса;
 
+        if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
+            require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
+            $mainObject = new ViewsController; //создали объект класса
+            $mainObject->actionMainAll(); // обратились к экшену объект а
+
+//        }
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
 
             /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
@@ -71,19 +110,20 @@ class Router
                 $controllerName = array_shift($segments_url) . 'Controller'; //array_shift возвращает первый элемент массива, удаляя его из массива
                 $controllerName = ucfirst($controllerName); //делаем первую букву заглавной
                 /*определяем какой экшен будет использоваться*/
-                $actionName = 'action'. ucfirst(array_shift($segments_url));
+                $actionName = 'action' . ucfirst(array_shift($segments_url));
 
                 /*подключаем файл контроллера*/
-                $conrollerFile = ROOT . '/controllers/'. $controllerName . '.php'; //записали имя файла
+                $conrollerFile = ROOT . '/controllers/' . $controllerName . '.php'; //записали имя файла
 
                 if (file_exists($conrollerFile)) { //проверим его наличие
-                    include_once ($conrollerFile);
+                    include_once($conrollerFile);
+                    echo "Подключен файл контроллера" . $conrollerFile;
                 }
 
                 /*Создаем объект класса и вызываем нужный экшен из класса контроллера*/
                 $conrolerObject = new $controllerName;
                 $result = $conrolerObject->$actionName();
-                if ($result =! null) {
+                if ($result = !null) {
                     break;
                 }
 
@@ -92,4 +132,4 @@ class Router
         }
 
     }
-}
+}}

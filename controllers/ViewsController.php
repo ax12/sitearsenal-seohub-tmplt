@@ -4,28 +4,39 @@ include_once ROOT . '/models/Page.php'; //подключили класса дл
 class ViewsController
 {
 
-    public function actionMain()
+    public function actionMainAll()
     {
-        if ( $GLOBALS['$devMess']) echo '<br>Сработал Экшен Mainpage:';
-        require_once 'main-page.php';
+        if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAll</div>';;
+        PageForAll::getMainHeader();
+        PageForAll::getMainPageContentAll();
+        PageForAll::getMainFooter();
+//
+        return true;
     }
     public function actionAuthorization()
     {
-        PageForAll::getMainHeader(); //обращаемся к методу Модели Page (models/Page.php)
-        if ( $GLOBALS['$devMess']) echo '<br>Сработал Экшен Authorization';
+
+        if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал Экшен Authorization</div>';
         require ROOT . '/templates/login_template.php';
-        PageForAll::getMainFooter(); //обращаемся к методу Модели Page (models/Page.php)
-
-
     }
+
+/*главная для админа*/
+    public function actionMainAdmin()
+    {
+        if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAdmin</div>';;
+        PageForAdmin::getMainHeader();
+        PageForAdmin::getMainPageContentAdmin();
+        PageForAdmin::getMainFooter();
+    }
+
 
 
 
     public function actionPortfolio()
     {
-        PageForAll::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
+        PageForAdmin::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
         require ROOT . '/templates/portfolio_template.php';
-        PageForAll::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+        PageForAdmin::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
 //
         return true;
     }

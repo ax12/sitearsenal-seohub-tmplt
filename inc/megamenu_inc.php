@@ -1,4 +1,5 @@
 <header id="header" class="transparent">
+    <?php if ( $GLOBALS['$devMess']) echo '<div class="debug-msg">подключен (inc/megamenu_inc.php)</div>'; ?>
 <div class="menu">
     <!-- menu start -->
     <nav id="menu" class="mega-menu">
@@ -18,7 +19,7 @@
                         <ul class="menu-links">
 
                             <?php
-                            if ( $GLOBALS['$devMess']) echo 'inc/magamenu_inc.php подключен';
+
                             foreach ($main_menu as $key => $value) {
                                 if (!is_array($value)) {
                                     $link = $value;

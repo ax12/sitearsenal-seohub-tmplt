@@ -1,6 +1,6 @@
 
 <div class="main-banner light-blue-bg">
-
+  
     <div class="rocket"><img class="img-fluid" src="../assets/images/rocket.gif" alt=""></div>
     <div class="banner-text text-white">
         <h2 class="title text-white"><?php echo $main_header_settings['slogan'];?></h2>

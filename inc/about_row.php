@@ -1,4 +1,5 @@
 <section class="high-documentation sec-relative pt-5 pb-5 gray-bg plr-6">
+    <?php if ( $GLOBALS['$devMess']) echo '<div class="debug-msg">подключен(inc/about_row.php)</div>'; ?>
     <marquee class="animated-text o-hidden dark">About Us</marquee>
     <div class="container-fluid">
         <div class="row">

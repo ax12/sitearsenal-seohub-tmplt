@@ -1,4 +1,4 @@
-<?php require 'inc/site_settings_array.php'; ?>
+
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
 <?php require_once 'inc/style_scripts_header_inc.php' // connect css files?>

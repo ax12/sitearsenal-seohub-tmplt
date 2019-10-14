@@ -260,3 +260,12 @@ div#main { z-index: 1; position: relative; }
     height: auto;
 
 }
+.debug-msg {
+    color: white;
+    /*position: absolute;*/
+    font-size: 12px;
+    background-color: #10944a;
+    z-index: 1000;
+
+
+}

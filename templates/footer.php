@@ -21,16 +21,16 @@ footer -->
     <div class="container">
         <div class="row top">
             <div class="col-lg-3 col-md-2">
-                <img class="img-fluid" src="images/logo-footer.png" alt="">
+                <img class="img-fluid" src="../images/logo-footer.png" alt="">
             </div>
             <div class="col-lg-5 col-md-6">
                 <div class="footer-nav text-right">
                     <ul>
-                        <li><a href="index-1.html">Home</a></li>
-                        <li><a href="about-01.html">About us</a></li>
-                        <li><a href="service-list-01.html">Service</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog</a></li>
-                        <li><a href="contact-single-office.html">Contact us</a></li>
+                        <li><a href="../index-1.html">Home</a></li>
+                        <li><a href="../about-01.html">About us</a></li>
+                        <li><a href="../service-list-01.html">Service</a></li>
+                        <li><a href="../blog-right-sidebar.html">Blog</a></li>
+                        <li><a href="../contact-single-office.html">Contact us</a></li>
                     </ul>
                 </div>
             </div>

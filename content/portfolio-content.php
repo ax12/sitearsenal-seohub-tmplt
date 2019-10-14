@@ -1,5 +1,5 @@
 <?php
-if ( $GLOBALS['$devMess']) echo 'Массив с данными content/portfolio_content.php подключен <br>';
+if ( $GLOBALS['$devMess']) echo '<div class="debug-msg">подключен (\content\portfolio-content.php)</div>';
 
 $portfolio_inside = array(
     'dezign' => 'Дизайн',

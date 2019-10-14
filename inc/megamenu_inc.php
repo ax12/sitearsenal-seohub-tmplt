@@ -1,5 +1,11 @@
-<header id="header" class="transparent">
-    <?php if ( $GLOBALS['$devMess']) echo '<div class="debug-msg">подключен (inc/megamenu_inc.php)</div>'; ?>
+<header id="header" class="
+<?php //определяем класс для меню, внутренний или главный хедер
+if ($_SERVER['REQUEST_URI'] == '/') {
+    echo 'transparent'; //class="transparent"; - меню на главной странице прозрачное
+} else {
+    echo 'default'; //class="default"; - меню на внутренних страницах (белое)
+}; ?>"
+<?php if ($GLOBALS['$devMess']) echo '<div class="debug-msg">подключен (inc/megamenu_inc.php)</div>'; ?>
 <div class="menu">
     <!-- menu start -->
     <nav id="menu" class="mega-menu">
@@ -23,7 +29,7 @@
                             foreach ($main_menu as $key => $value) {
                                 if (!is_array($value)) {
                                     $link = $value;
-                                }else {
+                                } else {
                                     $link = 'javascript:void(0)';
                                 }
                                 echo " <li class=\"active\"><a href=\"$link\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
@@ -120,7 +126,7 @@ search and side menu content -->
         //кнопка выход для админа
         if ($_SESSION['admin']) { ?>
             <a class="button border" href="?do=logout">Выход</a>
-        <?php };  ?>
+        <?php }; ?>
         <img class="img-fluid center-block " src="../assets/images/04.png" alt="">
 
     </div>

@@ -2,6 +2,7 @@
 Tab-2 -->
 
 <section class="tab-page page-section-ptb">
+    <?php getIncludingFileName ('/inc/tabs.php');?>
     <div class="container">
         <div class="row ">
             <div class="col-md-12">

@@ -1,5 +1,6 @@
 <section class="our-service no-gutter container-fluid mt-md-3 pb-md-4">
     <div class="row">
+        <?php getIncludingFileName ('/inc/services_tabs_inc_v2.php');?>
         <div class="col-lg-3 col-md-12  blue-bg mb-2">
             <div class="services-info h-100">
                 <h3 class="text-white mb-3"><?php echo $service_tabs_v2['header']; ?></h3>

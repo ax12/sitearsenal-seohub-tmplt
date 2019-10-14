@@ -50,7 +50,9 @@ class Router
 
 
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
-                echo 'Форич';
+
+            if  ($GLOBALS['$devMess']) echo
+            '<div class="debug-msg position-relative"> сработал foreach в Router::runAdmin  <br></div>';
             /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
             $uroPattern  - то что указано в маршрутах, $uri - то что пришло из строки браузера */
             if (preg_match("~^$uriPattern\b~", $uri)) {
@@ -68,7 +70,8 @@ class Router
                 $conrollerFile = ROOT . '/controllers/' . $controllerName . '.php'; //записали имя файла
 
                 if (file_exists($conrollerFile)) { //проверим его наличие
-                    echo "Подключен файл контроллера" . $conrollerFile;
+                   if  ($GLOBALS['$devMess']) echo
+                   '<div class="debug-msg position-relative"> Подключен файл контроллера . $conrollerFile . через Router::runAdmin() -> foreach <br></div>';
                     include_once($conrollerFile);
                 }
 
@@ -100,7 +103,8 @@ class Router
         }
 //        }
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
-            if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> foreach в методе runAll <br></div>';
+
+            if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> сработал foreach в Router::runAll <br></div>';
             /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
             $uroPattern  - то что указано в маршрутах, $uri - то что пришло из строки браузера */
             if (preg_match("~^$uriPattern\b~", $uri)) {
@@ -119,7 +123,9 @@ class Router
 
                 if (file_exists($conrollerFile)) { //проверим его наличие
                     include_once($conrollerFile);
-                    echo "Подключен файл контроллера" . $conrollerFile;
+                    if ($GLOBALS ['$mxDebugAllUsers'])
+                        echo  '<div class="debugallusers position-relative"> Подключен файл контроллера . $conrollerFile . через Router::runAll() -> foreach <br></div>';
+
                 }
 
                 /*Создаем объект класса и вызываем нужный экшен из класса контроллера*/

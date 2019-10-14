@@ -2,6 +2,7 @@
     <marquee class="animated-text o-hidden white"><?php echo $portfolio_arr['second_header'];?></marquee>
     <div class="container-fluid">
         <div class="row">
+            <?php getIncludingFileName ('/inc/multi_portfolio.php');?>
             <div class="col-sm-12">
                 <div class="section-title text-center">
                     <span><?php echo $portfolio_arr['first_header']?> </span>

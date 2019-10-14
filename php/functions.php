@@ -8,3 +8,8 @@ function getFilesInclud () {
     }
 
 }
+
+function getIncludingFileName ($fileName) {
+    if ($GLOBALS ['$mxDebugAllUsers'] || $GLOBALS['$devMess'])
+        echo "<div class=\"debugallusers position-absolute\"> Подключен (. $fileName. ) </div>";
+}

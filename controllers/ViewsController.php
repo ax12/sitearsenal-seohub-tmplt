@@ -13,14 +13,22 @@ class ViewsController
 //
         return true;
     }
+    /*главная для админа Краснодар */
+    public function actionKrasnodar()
+    {
+        if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionKrasnodar()</div>';;
+        PageForAdmin::getMainHeader();
+        PageForAdmin::getMainPageContentAdmin();
+        PageForAdmin::getMainFooter();
+    }
+    /*главная для админа*/
+
     public function actionAuthorization()
     {
 
         if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал Экшен Authorization</div>';
         require ROOT . '/templates/login_template.php';
     }
-
-/*главная для админа*/
     public function actionMainAdmin()
     {
         if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAdmin</div>';;

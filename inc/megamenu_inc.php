@@ -1,14 +1,15 @@
 <header id="header" class="
 <?php //определяем класс для меню, внутренний или главный хедер
-if ($_SERVER['REQUEST_URI'] == '/') {
+if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/krasnodar/' || $_SERVER['REQUEST_URI'] == '/en/') {
     echo 'transparent'; //class="transparent"; - меню на главной странице прозрачное
 } else {
     echo 'default'; //class="default"; - меню на внутренних страницах (белое)
 }; ?>"
-<?php if ($GLOBALS['$devMess']) echo '<div class="debug-msg">подключен (inc/megamenu_inc.php)</div>'; ?>
+
 <div class="menu">
     <!-- menu start -->
     <nav id="menu" class="mega-menu">
+        <?php getIncludingFileName ('/inc/megamenu_inc.php');?>
         <!-- menu list items container -->
         <section class="menu-list-items plr-6">
             <div class="container-fluid">

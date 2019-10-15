@@ -29,7 +29,7 @@
 
 
                             <div class="col-12 d-flex justify-content-center">
-                                <a class="button border-bule text-center" href="#">смотреть еще</a>
+                                <a class="button border-bule text-center" href="/portfolio/">смотреть еще</a>
                             </div>
 
 

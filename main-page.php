@@ -1,7 +1,7 @@
 <?php require 'inc/site_settings_array.php'; ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
-<?php require_once ROOT . '/inc/style_scripts_header_inc.php'; // connect css files?>
+<?php require 'inc/style_scripts_header_inc.php'; // connect css files?>
 <body>
 <!--=================================
     loading -->

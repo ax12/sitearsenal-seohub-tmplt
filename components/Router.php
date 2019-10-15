@@ -40,7 +40,7 @@ class Router
     {
         $uri = $this->getURI(); //обращаемся к (private function getURI) и получаем строку запроса в переменную $uri из private функции этого класса;
 
-        if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
+        if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/en/') { //если запрос на главную страницу
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса
             $mainObject->actionMainAdmin(); // обратились к экшену объект а
@@ -95,7 +95,7 @@ class Router
         if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> Router::runAll -></div>';
         $uri = $this->getURI(); //обращаемся к (private function getURI) и получаем строку запроса в переменную $uri из private функции этого класса;
 
-        if ($_SERVER['REQUEST_URI'] == '/') { //если запрос на главную страницу
+        if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/en/') { //если запрос на главную страницу
             if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> Подключили /controllers/ViewsController.php из метода runAll -></div>';
             require_once ROOT . '/controllers/ViewsController.php'; //подключаем файл с контроллерами для главной
             $mainObject = new ViewsController; //создали объект класса

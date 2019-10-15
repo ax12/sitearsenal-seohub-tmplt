@@ -35,8 +35,9 @@ class PageForAdmin
         require ROOT . '/inc/site_settings_array.php'; //подключаю повторно, не видит при подключении из хедера
         require_once ROOT . '/inc/about_row.php';
         require_once ROOT . '/inc/multi_portfolio_inc.php';
-        require_once ROOT . '/inc/tabs.php';
+//        require_once ROOT . '/inc/tabs.php';
         require_once ROOT . '/inc/services_tabs_inc_v2.php';
+        require_once ROOT . '/inc/multi_portfolio_inc.php';
 
 //        if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> Подключен (/templates/login_template.php) в методе getMainPageContentAll -></div>';
 //        require_once ROOT . '/templates/login_template.php';

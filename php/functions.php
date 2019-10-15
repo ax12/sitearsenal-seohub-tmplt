@@ -1,5 +1,5 @@
 <?php
-if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">подключен(php/functions.php)</div>';
+ getIncludingFileName ('function.php', 'position-relative');
 /*Выводит имя файла в котором она написана*/
 function getFilesInclud () {
     $included_files = get_included_files();
@@ -8,8 +8,8 @@ function getFilesInclud () {
     }
 
 }
-
-function getIncludingFileName ($fileName) {
+/*если файл ни чего не отображает, то передать в функцию класс bootstrap 'position-relativ'*/
+function getIncludingFileName ($fileName, $class = 'position-absolute') { //выводит сообщения в подключаемых файлах
     if ($GLOBALS ['$mxDebugAllUsers'] || $GLOBALS['$devMess'])
-        echo "<div class=\"debugallusers position-absolute\"> Подключен (. $fileName. ) </div>";
+        echo "<div class=\"debugallusers $class\"> Подключен (. $fileName. ) </div>";
 }

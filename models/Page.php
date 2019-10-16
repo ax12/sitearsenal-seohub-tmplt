@@ -9,6 +9,12 @@ class PageForAdmin
 
     }
 
+    public static function getMainFooter()
+    {
+        require ROOT . '/inc/scripts_footer_for_main_page.php';
+        require ROOT . '/templates/footer.php';
+    }
+
     public static function getMainPageContentAdmin()
     { //контент главной страницы для Админа
 

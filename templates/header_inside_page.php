@@ -25,6 +25,8 @@ require_once 'inc/loader.php';};?>
     <?php require_once 'inc/megamenu_inc.php'; ?>
 <!--=================================
 header -->
+
+
 <!--=================================
 intro-title -->
 <section class="intro-title blue-bg">
@@ -33,11 +35,20 @@ intro-title -->
             <div class="col-md-12 text-left">
                 <div class="intro-content">
                     <div class="intro-name">
-                        <h3 class="text-white">Case Studie</h3>
-                        <ul class="breadcrumb mt-1">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Case Studie</li>
-                        </ul>
+                        <?php
+                        $cur_url = trim($_SERVER['REQUEST_URI'], '/');
+                        foreach ($main_menu as $key => $value) {
+                            if (!is_array($value) and ($value == $cur_url)) {
+                              echo "<h3 class=\"text-white\">  $key </h3>";
+                              echo  " <ul class=\"breadcrumb\">
+                            <li class=\"breadcrumb-item\"><a href=\"/\">Главная</a></li>";
+                            echo "<li class=\"breadcrumb-item active\">  $key </li> </ul>";
+                            }
+
+                        }
+                        ?>
+
+
                     </div>
                     <div class="intro-img">
                         <img class="img-fluid" src=" <?php if ($img_header_inside){echo "images/breadcrumb/01.png";}?>" alt="">

@@ -10,7 +10,7 @@ class ViewsController
         PageForAdmin::getMainHeader();
         PageForAdmin::getMainPageContentAll();
         PageForAdmin::getMainFooter();
-//
+
         return true;
     }
     /*главная для админа Краснодар */
@@ -54,6 +54,15 @@ class ViewsController
         PageForAll::getHeader();
         echo 'actionDezign';
         PageForAll::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+        return true;
+    }
+    public function action404()
+    {
+        if ( $GLOBALS['$devMess'] || $GLOBALS ['$mxDebugAllUsers']) echo '<div class="debug-msg position-relative">Сработал экшен action404</div>';;
+
+        PageForAll::get404();
+
+//
         return true;
     }
 }

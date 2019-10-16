@@ -101,13 +101,17 @@ class Router
             $mainObject = new ViewsController; //создали объект класса
             $mainObject->actionMainAll(); // обратились к экшену объект а
         }
-//        }
+
         foreach ($this->routers as $uriPattern => $path) { //листаем массив с роутами из файла routes.php
 
             if ($GLOBALS ['$mxDebugAllUsers']) echo '<div class="debugallusers position-relative"> сработал foreach в Router::runAll <br></div>';
             /* $uriPattern сравниваем то что пришло в строке запроса с нашими маршрутами в routers.php
             $uroPattern  - то что указано в маршрутах, $uri - то что пришло из строки браузера */
-            if (preg_match("~^$uriPattern\b~", $uri)) {
+
+            $uri_array = (explode('/', $uri));
+            $first_uri = array_shift($uri_array);
+
+            if (preg_match("~^$uriPattern\b~", $uri) and count($uri_array)< 1) {
                 /*определяем какой контроллер и какой экшен в нем будет опрабатывать запрос
                 для этого в переменную $segments запишем массив из составляющих адресной строки, каждый элемент
                 массива отделен косой чертой   */
@@ -135,6 +139,12 @@ class Router
                     break;
                 }
 
+
+            }else { //если такого адреса нет или он имеет вложенность больше двух уровней
+                require_once ROOT . '/controllers/ViewsController.php';
+                $mainObject = new ViewsController;
+                $mainObject->action404();
+                break;
 
             }
         }

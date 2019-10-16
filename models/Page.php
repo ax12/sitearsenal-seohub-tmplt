@@ -4,16 +4,8 @@
 class PageForAdmin
 {
     public static function getMainHeader() //Хедер главной страницы, используется так же для неавторизованых ашеров
-    {//тут подключаем готовые разделы для продакшен, это увидетя поисковики и незареганые пользователи
-//        require ROOT . '/inc/site_settings_array.php';
-        require ROOT . '/inc/site_settings_array.php'; //
+    {        require ROOT . '/inc/site_settings_array.php'; //
         require ROOT . '/templates/main_header.php';
-//        require_once ROOT . '/inc/style_scripts_header_inc.php'; // connect css files
-//        require_once ROOT . '/inc/topbar.php';
-////        require_once  ROOT . '/inc/loader.php';
-//        //отключаем или подключаем загрузчик (ракету) настройка в site_settings_array.php
-//        require_once ROOT . '/inc/megamenu_inc.php'; //including horizontal main megamenu;
-//        require_once ROOT . '/inc/main_slider.php'; //главный слайдер ;
 
     }
 
@@ -47,8 +39,9 @@ class PageForAdmin
 
     public static function getMainFooter()
     {
+        require ROOT . '/inc/site_settings_array.php';
+        require ROOT . '/templates/footer_inside_page.php';
         require ROOT . '/inc/scripts_footer_inc.php';
-        require ROOT . '/templates/footer.php';
     }
 
 
@@ -60,7 +53,14 @@ class PageForAdmin
 
     public static function getFooter()
     {
+        require ROOT . '/inc/site_settings_array.php';
         require ROOT . '/templates/footer_inside_page.php';
+        require ROOT . '/inc/scripts_footer_inc.php';
+    }
+    public static function get404()
+    {
+        require ROOT . '/inc/style_scripts_header_inc.php';
+        require ROOT . '/templates/404.php';
     }
 
 
@@ -92,5 +92,10 @@ class PageForAll
         require ROOT . '/templates/footer_inside_page.php';
     }
 
+    public static function get404()
+    {
 
+        require ROOT . '/inc/style_scripts_header_inc.php';
+        require ROOT . '/templates/404.php';
+    }
 }

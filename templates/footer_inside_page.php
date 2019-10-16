@@ -10,11 +10,10 @@ footer -->
             <div class="col-lg-5 col-md-6">
                 <div class="footer-nav text-right">
                     <ul>
-                        <li><a href="index-1.html">Home</a></li>
-                        <li><a href="about-01.html">About us</a></li>
-                        <li><a href="service-list-01.html">Service</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog</a></li>
-                        <li><a href="contact-single-office.html">Contact us</a></li>
+                        <?php
+                        foreach ($footer_menu as $name => $link) {
+                            echo "<li><a href=\" $link \"> $name </a></li>";
+                        }?>
                     </ul>
                 </div>
             </div>
@@ -47,8 +46,8 @@ footer -->
         <div class="row">
             <div class="col-md-5">
                 <div class="about-content">
-                    <h6 class="mb-2">about us</h6>
-                    <p>We attract your potential buyers from search and turn them intoyour customers. Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option. sed diam nonummy nibham liber tempor cum soluta nobis eleifend option.</p>
+                    <h6 class="mb-2"><?php echo $about_us[header];?></h6>
+                    <p><?php echo $about_us[description];?></p>
                 </div>
             </div>
             <div class="col-md-7">

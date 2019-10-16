@@ -275,3 +275,6 @@ div#main { z-index: 1; position: relative; }
     background-color: #f2e214;
     z-index: 1000;
 }
+ul li{
+    list-style: none !important;
+}

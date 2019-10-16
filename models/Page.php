@@ -90,6 +90,7 @@ class PageForAll
     public static function getFooter()
     {
         require ROOT . '/templates/footer_inside_page.php';
+        require ROOT . '/inc/scripts_footer_inc.php';
     }
 
     public static function get404()

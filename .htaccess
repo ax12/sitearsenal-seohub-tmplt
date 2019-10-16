@@ -1,6 +1,13 @@
 AddDefaultCharset UTF-8
 RewriteEngine on
 
+#убрать слэш
+RewriteBase /
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
+#конец убрать слэш
+
 RewriteBase /
 
 

@@ -1,4 +1,6 @@
 <?php
+require_once ROOT . '/php/UserFunctions.php';
+
 getIncludingFileName('function.php', 'position-relative');
 /*Выводит имя файла в котором она написана*/
 function getFilesInclud()
@@ -17,4 +19,4 @@ function getIncludingFileName($fileName, $class = 'position-absolute')
         echo "<div class=\"debugallusers $class\"> Подключен (. $fileName. ) </div>";
 }
 
-/*breadcambs*/
+

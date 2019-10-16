@@ -37,7 +37,7 @@ if ($_SESSION['admin'] == true) {
     /*Авторизованные пользователи получают доступ к контроллеру*/
     $router = new Router();
     $router->runAdmin();
-    echo "runAdmin";
+
     /*Блок для не авторизованных пользователей*/
 } else {
 

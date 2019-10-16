@@ -3,6 +3,14 @@
 include_once ROOT . '/models/Page.php'; //подключили класса для получения данных для отображения на странице
 class ViewsController
 {
+    public function actionIndevelopment()
+    {
+        PageForAdmin::getHeader(); //обращаемся к методу Модели Page (models/Page.php)
+        require ROOT . '/inc/part_in_deweloping.php';
+        PageForAdmin::getFooter(); //обращаемся к методу Модели Page (models/Page.php)
+//
+        return true;
+    }
 
     public function actionMainAll()
     {
@@ -59,10 +67,7 @@ class ViewsController
     public function action404()
     {
         if ( $GLOBALS['$devMess'] || $GLOBALS ['$mxDebugAllUsers']) echo '<div class="debug-msg position-relative">Сработал экшен action404</div>';;
-
         PageForAll::get404();
-
-//
         return true;
     }
 }

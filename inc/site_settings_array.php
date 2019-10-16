@@ -2,7 +2,7 @@
 if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">подключен(inc/site_settings_array.php)</div>';
 //общие настройки для всех версий
 $url_page = $_SERVER['REQUEST_URI'];
-$loader = false;
+$loader = 1;
 $dark_logo = '/img/dark-logo.png';
 $light_logo = '/img/light-logo.png';
 $img_header_inside = true; //картинка на внутреннем хедере под главным меню

@@ -1,36 +1,19 @@
 <!--=================================
-contact-map -->
-<section class="contact-map">
-    <?php getIncludingFileName('(templates/footer.php)') ?>
-    <div class="container-fluid">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8739.333181249243!2d60.51671748077537!3d56.797331025893826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1569265424376!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-</section>
-
-<!--=================================
-contact-map -->
-
-
-
-
-
-<!--=================================
 footer -->
 
 <footer class="footer footer-topbar page-section-pt">
     <div class="container">
         <div class="row top">
             <div class="col-lg-3 col-md-2">
-                <img class="img-fluid" src="../images/logo-footer.png" alt="">
+                <img class="img-fluid" src="images/logo-footer.png" alt="">
             </div>
             <div class="col-lg-5 col-md-6">
                 <div class="footer-nav text-right">
                     <ul>
-                        <li><a href="../index-1.html">Home</a></li>
-                        <li><a href="../about-01.html">About us</a></li>
-                        <li><a href="../service-list-01.html">Service</a></li>
-                        <li><a href="../blog-right-sidebar.html">Blog</a></li>
-                        <li><a href="../contact-single-office.html">Contact us</a></li>
+                        <?php
+                        foreach ($footer_menu as $name => $link) {
+                            echo "<li><a href=\" $link \"> $name </a></li>";
+                        }?>
                     </ul>
                 </div>
             </div>
@@ -63,8 +46,8 @@ footer -->
         <div class="row">
             <div class="col-md-5">
                 <div class="about-content">
-                    <h6 class="mb-2">about us</h6>
-                    <p>We attract your potential buyers from search and turn them intoyour customers. Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option. sed diam nonummy nibham liber tempor cum soluta nobis eleifend option.</p>
+                    <h6 class="mb-2"><?php echo $about_us[header];?></h6>
+                    <p><?php echo $about_us[description];?></p>
                 </div>
             </div>
             <div class="col-md-7">
@@ -171,6 +154,21 @@ footer -->
     </div>
 </footer>
 
+<!--=================================
+footer -->
+
+
+
+
+
+<!--=================================
+back to top -->
+<div class="back-to-top">
+    <span><img src="images/rocket.png" data-src="images/rocket.png" data-hover="images/rocket.gif" alt=""></span>
+</div>
+<!--=================================
+back to top -->
+
 <!-- jquery  -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
@@ -193,3 +191,9 @@ footer -->
 
 <!-- custom -->
 <script type="text/javascript" src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

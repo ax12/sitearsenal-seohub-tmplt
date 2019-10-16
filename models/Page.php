@@ -11,8 +11,9 @@ class PageForAdmin
 
     public static function getMainFooter()
     {
-        require ROOT . '/inc/scripts_footer_for_main_page.php';
+        require ROOT . '/inc/site_settings_array.php'; //
         require ROOT . '/templates/footer.php';
+        require ROOT . '/inc/scripts_footer_for_main_page.php';
     }
 
     public static function getMainPageContentAdmin()

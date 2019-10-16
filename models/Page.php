@@ -37,13 +37,6 @@ class PageForAdmin
 
     }
 
-    public static function getMainFooter()
-    {
-        require ROOT . '/inc/site_settings_array.php';
-        require ROOT . '/templates/footer_inside_page.php';
-        require ROOT . '/inc/scripts_footer_inc.php';
-    }
-
 
     public static function getHeader()
     {
@@ -54,8 +47,8 @@ class PageForAdmin
     public static function getFooter()
     {
         require ROOT . '/inc/site_settings_array.php';
-        require ROOT . '/templates/footer_inside_page.php';
-        require ROOT . '/inc/scripts_footer_inc.php';
+        require ROOT . '/templates/footer.php';
+
     }
     public static function get404()
     {
@@ -77,8 +70,8 @@ class PageForAll
 
     public static function getMainFooter()
     {
-        require_once ROOT . '/inc/scripts_footer_inc.php';
-        require ROOT . '/templates/footer_inside_page.php';
+        require_once ROOT . '/inc/scripts_footer_for_main_page.php';
+        require ROOT . '/templates/footer.php';
     }
 
 
@@ -98,5 +91,6 @@ class PageForAll
 
         require ROOT . '/inc/style_scripts_header_inc.php';
         require ROOT . '/templates/404.php';
+        require ROOT . '/inc/scripts_footer_inc.php';
     }
 }

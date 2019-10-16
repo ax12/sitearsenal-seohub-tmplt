@@ -1,7 +1,7 @@
 <!--=================================
 contact-map -->
-
 <section class="contact-map">
+    <?php getIncludingFileName('(templates/footer.php)') ?>
     <div class="container-fluid">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8739.333181249243!2d60.51671748077537!3d56.797331025893826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1569265424376!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
@@ -170,3 +170,7 @@ footer -->
         </div>
     </div>
 </footer>
+
+<?php require ROOT . '/inc/scripts_footer_inc.php'; ?>
+
+

@@ -27,7 +27,7 @@ class ViewsController
         if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionKrasnodar()</div>';;
         PageForAdmin::getMainHeader();
         PageForAdmin::getMainPageContentAdmin();
-        PageForAdmin::getMainFooter();
+        PageForAdmin::getFooter();
     }
     /*главная для админа*/
 
@@ -42,7 +42,7 @@ class ViewsController
         if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">Сработал экшен actionMainAdmin</div>';;
         PageForAdmin::getMainHeader();
         PageForAdmin::getMainPageContentAdmin();
-        PageForAdmin::getMainFooter();
+        PageForAdmin::getFooter();
     }
 
 

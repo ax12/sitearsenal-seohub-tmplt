@@ -2,7 +2,7 @@
 /*стартуем сессию*/
 session_start();
 /*сообщения отладки*/
-$GLOBALS ['$mxDebugAllUsers'] = 0;//отладочные сообщения для неавторизованных пользователей
+$GLOBALS ['$mxDebugAllUsers'] = 1;//отладочные сообщения для неавторизованных пользователей
 
 
 require_once 'inc/get_lang_and_locations_inc.php'; //определяем язык или локацию

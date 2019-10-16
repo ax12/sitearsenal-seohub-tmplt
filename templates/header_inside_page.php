@@ -4,6 +4,7 @@
 <?php require_once 'inc/style_scripts_header_inc.php' // connect css files?>
 <link rel="stylesheet" type="text/css" href="css/magnific-popup/magnific-popup.css" />
 
+
 <body>
 <!--=================================
   loading -->

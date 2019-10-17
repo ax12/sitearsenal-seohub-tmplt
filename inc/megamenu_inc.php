@@ -8,10 +8,10 @@ if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/krasnodar/' |
 
 <div class="menu">
     <!-- menu start -->
-    <nav id="menu" class="mega-menu">
+    <nav>
         <?php getIncludingFileName ('/inc/megamenu_inc.php');?>
         <!-- menu list items container -->
-        <section class="menu-list-items plr-6">
+        <section class="">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -23,27 +23,60 @@ if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/krasnodar/' |
                             </li>
                         </ul>
                         <!-- menu links -->
-                        <ul class="menu-links">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
 
-                            <?php
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                <?php
 
-                            foreach ($main_menu as $key => $value) {
-                                if (!is_array($value)) {
-                                    $link = $value;
-                                } else {
-                                    $link = 'javascript:void(0)';
-                                }
-                                echo " <li class=\"active\"><a href=\"$link\"> $key <i class=\"fa fa-angle-down fa-indicator\"></i></a> ";
-                                echo "<ul class=\"drop-down-multilevel\">";
-                                if (is_array($main_menu[$key])) {
-                                    foreach ($main_menu[$key] as $key_in => $value_in) {
-                                        echo "<li><a href=\"$value_in\"> $key_in </a></li >";
+                                foreach ($main_menu as $key => $value) {
+                                    if (!is_array($value)) {
+                                        $link = $value;
+                                        $text = $key;
+                                        echo " <li class=\"nav-item\"><a class=\"nav-link\" href=\"$link\"> $text </a> </li>";
                                     }
-                                }
-                                echo "</ul>";
-                            };
 
-                            ?>
+                                    if (is_array($main_menu[$key])) {
+                                        echo "<li class=\"nav-item dropdown\"><a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\"
+                                                              role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> $key </a>";
+                                        echo " <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">";
+                                        foreach ($main_menu[$key] as $key_in => $value_in) {
+                                          echo " <a class=\"dropdown-item\" href=\"$value_in\">$key_in</a>";
+
+                                        }
+                                        echo "</div>";
+                                        echo "</li >";
+                                    }
+                                };
+                                ?>
+                                    </ul>
+
+                            </div>
+                        </nav>
+<!--<!--                            <?php
+//
+//                            foreach ($main_menu as $key => $value) {
+//                                if (!is_array($value)) {
+//                                    $link = $value;
+//                                } else {
+//                                    $link = 'javascript:void(0)';
+//                                }
+//                                echo "<ul class=\"navbar-nav\">";
+//                                echo " <li class=\"nav-item\"><a class=\"nav-link\" href=\"$link\"> $key </a> </li>";
+//
+//                                echo "<ul class=\"navbar-nav\">";
+//                                if (is_array($main_menu[$key])) {
+//                                    foreach ($main_menu[$key] as $key_in => $value_in) {
+//                                        echo "<li><a href=\"$value_in\"> $key_in </a></li >";
+//                                    }
+//                                }
+//                                echo "</ul>";
+//                            };
+//
+//                            ?>
                             <li class="side-menu-main">
                                 <div class="side-menu">
                                     <div class="mobile-nav-button">
@@ -54,7 +87,7 @@ if ($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/krasnodar/' |
                                 </div>
                             </li>
 
-                        </ul>
+
                     </div>
 
                 </div>

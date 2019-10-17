@@ -17,6 +17,5 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/max.css"/>
 
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style-inside.css" />
 
 </head>

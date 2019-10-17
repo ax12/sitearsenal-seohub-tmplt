@@ -45,11 +45,8 @@ intro-title -->
                             <li class=\"breadcrumb-item\"><a href=\"/\">Главная</a></li>";
                             echo "<li class=\"breadcrumb-item active\">  $key </li> </ul>";
                             }
-
                         }
                         ?>
-
-
                     </div>
                     <div class="intro-img">
                         <img class="img-fluid" src=" <?php if ($img_header_inside){echo "images/breadcrumb/01.png";}?>" alt="">

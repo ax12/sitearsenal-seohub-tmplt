@@ -4,7 +4,7 @@ if ( $GLOBALS['$devMess']) echo '<div class="debug-msg position-relative">под
 
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
-<?php require_once ROOT . '/inc/style_scripts_header_inc.php'; // connect css files?>
+<?php require_once ROOT . '/inc/style_scripts_header_main.php'; // connect css files?>
 <body>
 <!--=================================
     loading -->

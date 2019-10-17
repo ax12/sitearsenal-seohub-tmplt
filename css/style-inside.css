@@ -1,0 +1,14 @@
+
+.mega-menu .menu-logo {
+    padding: 0px 0px;
+    color: #0b0b0b;
+}
+.mega-menu .menu-mobile-collapse-trigger:before, .mega-menu .menu-mobile-collapse-trigger:after, .mega-menu .menu-mobile-collapse-trigger span {
+    background: #676767;
+}
+.mega-menu .menu-links > li > a {
+    line-height: 14px;
+}
+.side-menu .mobile-nav-button {
+    margin: 7px 0 0 5px;
+}

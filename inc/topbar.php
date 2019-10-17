@@ -17,7 +17,7 @@
 
             <div class="col-md-4 col-12 float-right d-flex ">
                 <div class="topbar-left text-left text-md-left text-light pl-4 ">
-                    <div class="float-left mr-3 mx-font-marker"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="float-left mr-3 mx-font-marker"><i <i class="fas fa-map-marker-alt"></i></div>
                     <div class="float-left mx-lineheight-top-bar"><a class="text-light"
                                                                      href="/"><?php echo $main_contacts['ekb']['city']; ?></a>
                         <br> <span
